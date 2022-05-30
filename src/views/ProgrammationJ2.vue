@@ -1,4 +1,5 @@
 <template>
+<div>
   <h2
     class="ml-1 mb-6 mt-10 w-3/4 -rotate-6 bg-black font-archivo-black text-xl text-white"
   >
@@ -18,6 +19,7 @@
   <card image="/img/lujipeka.jpg" artiste="LUJIPEKA"> </card>
   <card image="/img/roshi.jpg" artiste="CAPTAINE ROSHI"> </card>
   <card image="/img/bakari.jpg" artiste="BAKARI"> </card>
+</div>
 </template>
 
 <script>
