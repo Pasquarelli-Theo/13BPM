@@ -19,10 +19,7 @@
     </p>
     <div class="flex place-content-center">
       <a href="https://fr-fr.facebook.com/schmathafack" target="_blank"
-        ><img
-          src="public/icones/facebook.png"
-          alt="logo facebook"
-          class=" w-12"
+        ><img src="public/icones/facebook.png" alt="logo facebook" class="w-12"
       /></a>
       <a href="https://www.instagram.com/sch/?hl=fr" target="_blank"
         ><img
@@ -45,5 +42,28 @@
           class="ml-5 w-12"
       /></a>
     </div>
+    <div class="flex ml-28">
+      <ClockIcon class="w-8" />
+      <p class="ml-2 font-viga">Grande scène</p>
+    </div>
+    <div class="flex ml-28">
+      <LocationMarkerIcon class="w-8" />
+      <p class="ml-2 font-viga">Jour 1 - 00h00</p>
+    </div>
   </div>
 </template>
+
+<script>
+import { ClockIcon, LocationMarkerIcon } from "@heroicons/vue/outline";
+export default {
+  name: "App",
+  components: {
+    ClockIcon,
+    LocationMarkerIcon,
+  },
+
+  data() {
+    return {};
+  },
+};
+</script>

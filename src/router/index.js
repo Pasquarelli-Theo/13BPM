@@ -11,6 +11,8 @@ import ConcertJ2 from "../views/ConcertJ2.vue";
 import ConcertGS from "../views/ConcertGS.vue";
 import ConcertPS from "../views/ConcertPS.vue";
 import SCH from "../views/SCH.vue";
+import MentionsLegales from"../views/MentionsLegales.vue";
+import Contact from "../views/Contact.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -35,6 +37,12 @@ const router = createRouter({
     { path: "/ConcertGS", name: "ConcertGS", component: ConcertGS },
     { path: "/ConcertPS", name: "ConcertPS", component: ConcertPS },
     { path: "/SCH", name: "SCH", component: SCH },
+    {
+      path: "/MentionsLegales",
+      name: "MentionsLegales",
+      component: MentionsLegales,
+    },
+    { path: "/Contact", name: "Contact", component: Contact },
   ],
 });
 
