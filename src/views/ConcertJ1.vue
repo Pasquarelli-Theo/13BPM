@@ -23,7 +23,7 @@
   <card image="/img/capo.jpg" artiste="CAPO PLAZA"> </card>
   <card image="/img/nahir.jpg" artiste="NAHIR"> </card>
   <card image="/img/sfera.jpg" artiste="SFERA EBBASTA"> </card>
-  <card image="/img/sch.jpg" artiste="SCH"> </card>
+<RouterLink to="/sch"><card image="/img/sch.jpg" artiste="SCH"> </card></RouterLink>
 </div>
 </template>
 

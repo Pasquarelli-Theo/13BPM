@@ -4,7 +4,7 @@
   >
     LES ARTISTES
   </h2>
-  <card image="/img/sch.jpg" artiste="SCH"> </card>
+<RouterLink to="/sch"><card image="/img/sch.jpg" artiste="SCH"> </card></RouterLink>
   <card image="/img/damso.jpg" artiste="DAMSO"> </card>
   <card image="/img/dinos.jpg" artiste="DINOS"> </card>
   <card image="/img/sfera.jpg" artiste="SFERA EBBASTA"> </card>

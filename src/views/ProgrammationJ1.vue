@@ -12,7 +12,7 @@
       ><bouton texte="JOUR 2"></bouton
     ></RouterLink>
   </div>
-  <card image="/img/sch.jpg" artiste="SCH"> </card>
+  <RouterLink to="/sch"><card image="/img/sch.jpg" artiste="SCH"> </card></RouterLink>
   <card image="/img/sfera.jpg" artiste="SFERA EBBASTA"> </card>
   <card image="/img/leto.jpg" artiste="LETO"> </card>
   <card image="/img/luv.jpg" artiste="LUV RESVAL"> </card>
