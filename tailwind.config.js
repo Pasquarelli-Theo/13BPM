@@ -30,7 +30,8 @@ module.exports = {
        "work-sans": "Work Sans",
        "viga": "Viga",
        "homenaje": "Homenaje",
-        "nunito": "Nunito"
+        "nunito": "Nunito",
+        "archivo-black": "Archivo Black"
       },
       "borderRadius": {
        "none": "0",

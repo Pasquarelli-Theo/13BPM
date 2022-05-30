@@ -10,11 +10,11 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: "/", name: "Home", component: Home },
-    { path: "/", name: "Programmation", component: Programmation },
-    { path: "/", name: "Artistes", component: Artistes },
-    { path: "/", name: "Festival", component: Festival },
-    { path: "/", name: "Concert", component: Concert },
-  ]
+    { path: "/Programmation", name: "Programmation", component: Programmation },
+    { path: "/Artistes", name: "Artistes", component: Artistes },
+    { path: "/Festival", name: "Festival", component: Festival },
+    { path: "/Concert", name: "Concert", component: Concert },
+  ],
 });
 
 export default router;
