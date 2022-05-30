@@ -11,11 +11,11 @@
         voyagez en Italie avec Sfera Ebbasta et Capo Plaza.
       </p>
     </div>
-    <p
+    <h2
       class="ml-1 mb-6 mt-12 w-3/4 -rotate-6 bg-black font-archivo-black text-xl text-white"
     >
       D'AUTRES INFORMATIONS
-    </p>
+    </h2>
     <RouterLink to="/Programmation"
       ><div class="mb-10 flex place-content-center">
         <img src="/public/img/vers-prog.png" class="w-9/12" /></div

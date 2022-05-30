@@ -1,4 +1,9 @@
 <template>
+  <h2
+      class="ml-1 mb-6 mt-10 w-3/4 -rotate-6 bg-black font-archivo-black text-xl text-white"
+    >
+      PROGRAMMATION
+    </h2>
   <card image="/img/sch.jpg" artiste="SCH"> </card>
   <card image="/img/damso.jpg" artiste="DAMSO"> </card>
   <card image="/img/dinos.jpg" artiste="DINOS"> </card>
