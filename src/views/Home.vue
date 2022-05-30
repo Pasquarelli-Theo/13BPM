@@ -2,7 +2,7 @@
   <div>
     <img src="/public/img/imgHome.png" />
     <div>
-      <p class="mt-9 ml-5 mr-5 bg-white font-nunito font-bold">
+      <p class="mt-9 ml-5 mr-5 p-2 bg-white font-nunito font-bold">
         Du 11 au 12 Juin à la plage du Prado dans le 8e arrondissement de
         Marseille se déroulera la première édition du festival 100% RAP 13BPM.
         Deux journées complètes de concerts sur 2 scènes de concerts. Retrouver
