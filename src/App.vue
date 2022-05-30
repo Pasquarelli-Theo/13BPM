@@ -1,6 +1,6 @@
 <template>
   <div class="bg-light_grey">
-    <header class="sticky top-0 z-40 h-12 w-full bg-white mt-3 px-3">
+    <header class="sticky top-0 z-40 mt-2 h-12 w-full bg-white px-3">
       <div class="flex h-full w-full items-center justify-between">
         <div class="flex items-center">
           <RouterLink to="/">
@@ -29,27 +29,37 @@
     </header>
     <RouterView />
     <footer class="bg-red-100 text-white">
+      <div class="flex place-content-center p-10">
+        <RouterLink to="/">
+          <img src="/icones/Logo_blanc.png" alt="Logo 13BPM"
+        /></RouterLink>
+      </div>
       <div class="flex place-content-center">
-      <a href="https://fr-fr.facebook.com/" target="_blank"
-        ><img src="public/icones/facebook_w.png" alt="logo facebook" class="w-8 mt-2"
-      /></a>
-      <a href="https://www.instagram.com/" target="_blank"
-        ><img
-          src="public/icones/instagram_w.png"
-          alt="logo instagram"
-          class="ml-5 mt-2 w-8"
-      /></a>
-      <a href="https://twitter.com/" target="_blank"
-        ><img
-          src="public/icones/twitter_w.png"
-          alt="logo twitter"
-          class="ml-5 mt-3 w-8"
-      /></a>
-    </div>
-    <div class=" flex place-content-center text-base">
-      <RouterLink to="/Contact"><p class="m-5">Contact</p></RouterLink>
-      <RouterLink to="/MentionsLegales"><p class="m-5">Mentions légales</p></RouterLink>
-    </div>
+        <a href="https://fr-fr.facebook.com/" target="_blank"
+          ><img
+            src="public/icones/facebook_w.png"
+            alt="logo facebook"
+            class="mt-2 w-8"
+        /></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img
+            src="public/icones/instagram_w.png"
+            alt="logo instagram"
+            class="ml-5 mt-2 w-8"
+        /></a>
+        <a href="https://twitter.com/" target="_blank"
+          ><img
+            src="public/icones/twitter_w.png"
+            alt="logo twitter"
+            class="ml-5 mt-3 w-8"
+        /></a>
+      </div>
+      <div class="flex place-content-center text-base">
+        <RouterLink to="/Contact"><p class="m-5">Contact</p></RouterLink>
+        <RouterLink to="/MentionsLegales"
+          ><p class="m-5">Mentions légales</p></RouterLink
+        >
+      </div>
     </footer>
   </div>
 </template>
