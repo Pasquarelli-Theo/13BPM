@@ -19,10 +19,10 @@
           <ul
             class="text-blanc flex flex-col gap-8 py-4 font-bold uppercase lg:flex-row"
           >
-            <RouterLink to="/programme">Programmation</RouterLink>
-            <RouterLink to="/artistes">Artistes</RouterLink>
-            <RouterLink to="/festival">Le festival</RouterLink>
-            <RouterLink to="/concert">Concert</RouterLink>
+            <RouterLink to="/Programmation">Programmation</RouterLink>
+            <RouterLink to="/Artistes">Artistes</RouterLink>
+            <RouterLink to="/Festival">Le festival</RouterLink>
+            <RouterLink to="/Concert">Concert</RouterLink>
           </ul>
         </nav>
       </div>
