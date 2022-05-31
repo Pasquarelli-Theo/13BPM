@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2
-      class="ml-1 mb-6 mt-10 w-3/4 -rotate-6 bg-black font-archivo-black text-xl text-white"
+      class="ml-1 mb-6 mt-10 w-80 -rotate-6 bg-black font-archivo-black text-xl text-white"
     >
       LE FESTIVAL
     </h2>

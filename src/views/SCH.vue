@@ -1,9 +1,10 @@
 <template>
   <div>
-    <div class="w-auto">
-      <img src="/public/img/SCH_artiste.jpg" alt="image du rappeur sch" />
-    </div>
-    <p class="mt-8 ml-5 mr-5 bg-white font-work-sans font-bold p-2">
+    <img
+      class="w-full"
+      src="/public/img/SCH_artiste.jpg"
+      alt="image du rappeur SCH"/>
+    <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
       Julien Schwarzer plus connu sous le pseudonyme SCH est un rappeur français
       originaire de Marseille. Le rappeur d’origine allemande du côté de son
       père, s’inspire d’influences provenant des Etats-Unis comme Eminem et 50
@@ -42,11 +43,11 @@
           class="ml-5 w-12"
       /></a>
     </div>
-    <div class="flex ml-28">
+    <div class="ml-28 flex">
       <ClockIcon class="w-8" />
       <p class="ml-2 font-viga">Grande scène</p>
     </div>
-    <div class="flex ml-28">
+    <div class="ml-28 flex">
       <LocationMarkerIcon class="w-8" />
       <p class="ml-2 font-viga">Jour 1 - 00h00</p>
     </div>
