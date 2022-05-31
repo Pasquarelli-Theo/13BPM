@@ -16,7 +16,7 @@
       <RouterLink to="/ConcertPS"
       ><bouton texte="PETITE SCÈNE"></bouton></RouterLink>
   </div>
-  <RouterLink to="/sch"><card image="/img/sch.jpg" artiste="SCH"> </card></RouterLink>
+  <RouterLink to="/sch"><card2 image="/img/sch.jpg" artiste="SCH" jour="Jour 1" heure="Grande scène - 00h00"> </card2></RouterLink>
   <card image="/img/damso.jpg" artiste="DAMSO"> </card>
   <card image="/img/dinos.jpg" artiste="DINOS"> </card>
   <card image="/img/sfera.jpg" artiste="SFERA EBBASTA"> </card>
@@ -37,12 +37,14 @@
 
 <script>
 import card from "../components/card.vue";
+import card2 from "../components/card2.vue";
 import bouton from "../components/bouton.vue";
 
 export default {
   name: "App",
   components: {
     card,
+    card2,
     bouton,
   },
 
