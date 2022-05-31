@@ -16,25 +16,25 @@
       <RouterLink to="/ConcertPS"
       ><bouton texte="PETITE SCÈNE"></bouton></RouterLink>
   </div>
-<RouterLink to="/sch"><card image="/img/sch.jpg" artiste="SCH"> </card></RouterLink>
-  <card image="/img/damso.jpg" artiste="DAMSO"> </card>
-  <card image="/img/dinos.jpg" artiste="DINOS"> </card>
-  <card image="/img/sfera.jpg" artiste="SFERA EBBASTA"> </card>
-  <card image="/img/leto.jpg" artiste="LETO"> </card>
-  <card image="/img/ziak.jpg" artiste="ZIAK"> </card>
-  <card image="/img/luv.jpg" artiste="LUV RESVAL"> </card>
-  <card image="/img/lefa.jpg" artiste="LEFA"> </card>
+  <RouterLink to="/sch"><card2 image="/img/sch.jpg" artiste="SCH" jour="Jour 1" heure="Grande scène - 00h00"> </card2></RouterLink>
+  <card2 image="/img/damso.jpg" artiste="DAMSO" jour="Jour 2" heure="Grande scène - 00h00"> </card2>
+  <card2 image="/img/dinos.jpg" artiste="DINOS" jour="Jour 2" heure="Grande scène - 22h30"> </card2>
+  <card2 image="/img/sfera.jpg" artiste="SFERA EBBASTA" jour="Jour 1" heure="Grande scène - 22h30"> </card2>
+  <card2 image="/img/leto.jpg" artiste="LETO" jour="Jour 1" heure="Grande scène - 21h30"> </card2>
+  <card2 image="/img/ziak.jpg" artiste="ZIAK" jour="Jour 2" heure="Grande scène - 20h00"> </card2>
+  <card2 image="/img/luv.jpg" artiste="LUV RESVAL" jour="Jour 2" heure="Grande scène - 20h00"> </card2>
+  <card2 image="/img/lefa.jpg" artiste="LEFA" jour="Jour 2" heure="Grande scène - 21h30"> </card2>
 </div>
 </template>
 
 <script>
-import card from "../components/card.vue";
+import card2 from "../components/card2.vue";
 import bouton from "../components/bouton.vue";
 
 export default {
   name: "App",
   components: {
-    card,
+    card2,
     bouton,
   },
 

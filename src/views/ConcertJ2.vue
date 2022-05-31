@@ -16,25 +16,25 @@
       ><bouton texte="PETITE SCÈNE"></bouton
     ></RouterLink>
   </div>
-  <card image="/img/disiz.jpg" artiste="DISIZ"> </card>
-  <card image="/img/bakari.jpg" artiste="BAKARI"> </card>
-  <card image="/img/ziak.jpg" artiste="ZIAK"> </card>
-  <card image="/img/lefa.jpg" artiste="LEFA"> </card>
-  <card image="/img/roshi.jpg" artiste="CAPTAINE ROSHI"> </card>
-  <card image="/img/lujipeka.jpg" artiste="LUJIPEKA"> </card>
-  <card image="/img/dinos.jpg" artiste="DINOS"> </card>
-  <card image="/img/damso.jpg" artiste="DAMSO"> </card>
+  <card2 image="/img/disiz.jpg" artiste="DISIZ" jour="Jour 2" heure="Petite scène - 19h00"> </card2>
+  <card2 image="/img/bakari.jpg" artiste="BAKARI" jour="Jour 2" heure="Petite scène - 20h00"> </card2>
+  <card2 image="/img/ziak.jpg" artiste="ZIAK" jour="Jour 2" heure="Grande scène - 20h00"> </card2>
+  <card2 image="/img/lefa.jpg" artiste="LEFA" jour="Jour 2" heure="Grande scène - 21h30"> </card2>
+  <card2 image="/img/roshi.jpg" artiste="CAPTAINE ROSHI" jour="Jour 2" heure="Petite scène - 21h30"> </card2>
+  <card2 image="/img/lujipeka.jpg" artiste="LUJIPEKA" jour="Jour 1" heure="Petite scène - 22h30"> </card2>
+  <card2 image="/img/dinos.jpg" artiste="DINOS" jour="Jour 2" heure="Grande scène - 22h30"> </card2>
+  <card2 image="/img/damso.jpg" artiste="DAMSO" jour="Jour 2" heure="Grande scène - 00h00"> </card2>
 </div>
 </template>
 
 <script>
-import card from "../components/card.vue";
+import card2 from "../components/card2.vue";
 import bouton from "../components/bouton.vue";
 
 export default {
   name: "App",
   components: {
-    card,
+    card2,
     bouton,
   },
 

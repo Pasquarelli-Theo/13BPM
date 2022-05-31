@@ -2,7 +2,7 @@
   <div>
     <img
       class="w-full"
-      src="/public/img/SCH_artiste.jpg"
+      src="/public/img/sch_partiste.jpg"
       alt="image du rappeur SCH"/>
     <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
       Julien Schwarzer plus connu sous le pseudonyme SCH est un rappeur français
