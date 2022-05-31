@@ -43,7 +43,7 @@
       <div class="flex place-content-center">
         <a href="https://fr-fr.facebook.com/" target="_blank"
           ><img
-            src="../public/icones/facebookw.png"
+            src="../public/icones/facebook_w.png"
             alt="logo facebook"
             class="mt-2 w-8"
         /></a>

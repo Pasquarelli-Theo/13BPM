@@ -5,15 +5,16 @@
     >
       PROGRAMMATION
     </h2>
-    <div class="flex">
-      <bouton texte="TOUS"></bouton>
+    <div class="grid grid-flow-row-dense grid-cols-3 lg:grid-cols-10 md:grid-cols-8 sm:grid-cols-6">
+      <bouton  class="w-24" texte="TOUS"></bouton>
       <RouterLink to="/ProgrammationJ1"
-        ><bouton texte="JOUR 1"></bouton
+        ><bouton  class="w-24" texte="JOUR 1"></bouton
       ></RouterLink>
       <RouterLink to="/ProgrammationJ2"
-        ><bouton texte="JOUR 2"></bouton
+        ><bouton  class="w-24" texte="JOUR 2"></bouton
       ></RouterLink>
     </div>
+      <div class="grid grid-flow-row-dense lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 ">
     <RouterLink to="/sch"
       ><card image="/img/sch.jpg" artiste="SCH"> </card
     ></RouterLink>
@@ -32,6 +33,7 @@
     <card image="/img/coyott.jpg" artiste="COYOTT JO BASTARD"> </card>
     <card image="/img/mojixsboy.jpg" artiste="MOJI X SBOY"> </card>
     <card image="/img/bakari.jpg" artiste="BAKARI"> </card>
+  </div>
   </div>
 </template>
 

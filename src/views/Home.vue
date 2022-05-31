@@ -16,6 +16,7 @@
     >
       D'AUTRES INFORMATIONS
     </h2>
+    <div class="grid grid-flow-row-dense lg:grid-cols-2 md:grid-cols-2 sm:mr-20 sm:ml-20">
     <RouterLink to="/Programmation"
       ><div class="mb-10 flex place-content-center">
         <img src="../../public/img/vers-prog.png" class="w-9/12" /></div
@@ -27,6 +28,7 @@
           class="w-9/12"
         /></div
     ></RouterLink>
+    </div>
   </div>
 </template>
 

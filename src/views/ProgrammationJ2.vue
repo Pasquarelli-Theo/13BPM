@@ -5,12 +5,13 @@
   >
     PROGRAMMATION
   </h2>
-  <div class="flex">
-    <RouterLink to="/Programmation"><bouton texte="TOUS"></bouton></RouterLink>
+  <div class="grid grid-flow-row-dense grid-cols-3 lg:grid-cols-10 md:grid-cols-8 sm:grid-cols-6">
+    <RouterLink to="/Programmation"><bouton  class="w-24" texte="TOUS"></bouton></RouterLink>
     <RouterLink to="/ProgrammationJ1">
-      <bouton texte="JOUR 1"></bouton> </RouterLink
-    ><bouton texte="JOUR 2"></bouton>
+      <bouton  class="w-24" texte="JOUR 1"></bouton> </RouterLink
+    ><bouton  class="w-24" texte="JOUR 2"></bouton>
   </div>
+        <div class="grid grid-flow-row-dense lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 ">
   <card image="/img/damso.jpg" artiste="DAMSO"> </card>
   <card image="/img/dinos.jpg" artiste="DINOS"> </card>
   <card image="/img/ziak.jpg" artiste="ZIAK"> </card>
@@ -19,6 +20,7 @@
   <card image="/img/lujipeka.jpg" artiste="LUJIPEKA"> </card>
   <card image="/img/roshi.jpg" artiste="CAPTAINE ROSHI"> </card>
   <card image="/img/bakari.jpg" artiste="BAKARI"> </card>
+</div>
 </div>
 </template>
 
