@@ -15,23 +15,24 @@
       ></RouterLink>
     </div>
     <RouterLink to="/sch"
-      ><card image="../public/img/sch.jpg" artiste="SCH"> </card
+      ><card image="../../public/img/sch.jpg" artiste="SCH"> </card
     ></RouterLink>
-    <card image="../public/img/damso.jpg" artiste="DAMSO"> </card>
-    <card image="../public/img/dinos.jpg" artiste="DINOS"> </card>
-    <card image="../public/img/sfera.jpg" artiste="SFERA EBBASTA"> </card>
-    <card image="../public/img/leto.jpg" artiste="LETO"> </card>
-    <card image="../public/img/ziak.jpg" artiste="ZIAK"> </card>
-    <card image="../public/img/luv.jpg" artiste="LUV RESVAL"> </card>
-    <card image="../public/img/disiz.jpg" artiste="DISIZ"> </card>
-    <card image="../public/img/lefa.jpg" artiste="LEFA"> </card>
-    <card image="../public/img/lujipeka.jpg" artiste="LUJIPEKA"> </card>
-    <card image="../public/img/capo.jpg" artiste="CAPO PLAZA"> </card>
-    <card image="../public/img/nahir.jpg" artiste="NAHIR"> </card>
-    <card image="../public/img/roshi.jpg" artiste="CAPTAINE ROSHI"> </card>
-    <card image="../public/img/coyott.jpg" artiste="COYOTT JO BASTARD"> </card>
-    <card image="../public/img/mojixsboy.jpg" artiste="MOJI X SBOY"> </card>
-    <card image="../public/img/bakari.jpg" artiste="BAKARI"> </card>
+    <card image="../../public/img/damso.jpg" artiste="DAMSO"> </card>
+    <card image="../../public/img/dinos.jpg" artiste="DINOS"> </card>
+    <card image="../../public/img/sfera.jpg" artiste="SFERA EBBASTA"> </card>
+    <card image="../../public/img/leto.jpg" artiste="LETO"> </card>
+    <card image="../../public/img/ziak.jpg" artiste="ZIAK"> </card>
+    <card image="../../public/img/luv.jpg" artiste="LUV RESVAL"> </card>
+    <card image="../../public/img/disiz.jpg" artiste="DISIZ"> </card>
+    <card image="../../public/img/lefa.jpg" artiste="LEFA"> </card>
+    <card image="../../public/img/lujipeka.jpg" artiste="LUJIPEKA"> </card>
+    <card image="../../public/img/capo.jpg" artiste="CAPO PLAZA"> </card>
+    <card image="../../public/img/nahir.jpg" artiste="NAHIR"> </card>
+    <card image="../../public/img/roshi.jpg" artiste="CAPTAINE ROSHI"> </card>
+    <card image="../../public/img/coyott.jpg" artiste="COYOTT JO BASTARD">
+    </card>
+    <card image="../../public/img/mojixsboy.jpg" artiste="MOJI X SBOY"> </card>
+    <card image="../../public/img/bakari.jpg" artiste="BAKARI"> </card>
   </div>
 </template>
 
