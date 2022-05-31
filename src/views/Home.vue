@@ -18,12 +18,12 @@
     </h2>
     <RouterLink to="/Programmation"
       ><div class="mb-10 flex place-content-center">
-        <img src="../img/vers-prog.png" class="w-9/12" /></div
+        <img src="../../public/img/vers-prog.png" class="w-9/12" /></div
     ></RouterLink>
     <RouterLink to="/Festival"
       ><div class="flex place-content-center">
         <img
-          src="public/img/delta-festival-aix-marseille.jpg"
+          src="../../public/img/delta-festival-aix-marseille.jpg"
           class="w-9/12"
         /></div
     ></RouterLink>
