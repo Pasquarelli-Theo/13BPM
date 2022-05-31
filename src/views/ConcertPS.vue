@@ -5,7 +5,9 @@
     >
       CONCERT
     </h2>
-    <div class="grid grid-flow-row-dense grid-cols-3 lg:grid-cols-10 md:grid-cols-8 sm:grid-cols-6">
+    <div
+      class="grid grid-flow-row-dense grid-cols-3 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10"
+    >
       <RouterLink to="/Concert"
         ><bouton class="w-24" texte="TOUS"></bouton
       ></RouterLink>
@@ -18,8 +20,11 @@
       <RouterLink to="/ConcertGS"
         ><bouton class="w-32" texte="GRANDE SCÈNE"></bouton
       ></RouterLink>
-      <bouton class="w-32" texte="PETITE SCÈNE"></bouton>
+      <bouton class="w-32 ml-9" texte="PETITE SCÈNE"></bouton>
     </div>
+    <div
+      class="grid grid-flow-row-dense sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+    >
     <card2
       image="/img/disiz.jpg"
       artiste="DISIZ"
@@ -76,6 +81,7 @@
       heure="Petite scène - 20h00"
     >
     </card2>
+  </div>
   </div>
 </template>
 
