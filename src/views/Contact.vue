@@ -5,15 +5,17 @@
     >
       CONTACT
     </h2>
-    
+    <div class="grid grid-flow-row-dense grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+    <div >
     <p class="font-viga m-5 text-lg">
       Trouvez nous plus facilement !
     </p>
     <div class="flex place-content-center">
     <img src="../../public/img/plan.jpg">
     </div>
+    </div>
 
-
+<div>
     <p class="font-viga m-5 text-lg">
       Une requête ou une question ? Contactez nous en remplissant les champs du
       formulaire :
@@ -50,6 +52,8 @@
         </button>
       </form>
     </div>
+</div>
+  </div>
   </div>
 </template>
 
