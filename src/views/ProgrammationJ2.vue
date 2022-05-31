@@ -11,14 +11,14 @@
       <bouton texte="JOUR 1"></bouton> </RouterLink
     ><bouton texte="JOUR 2"></bouton>
   </div>
-  <card image="/img/damso.jpg" artiste="DAMSO"> </card>
-  <card image="/img/dinos.jpg" artiste="DINOS"> </card>
-  <card image="/img/ziak.jpg" artiste="ZIAK"> </card>
-  <card image="/img/disiz.jpg" artiste="DISIZ"> </card>
-  <card image="/img/lefa.jpg" artiste="LEFA"> </card>
-  <card image="/img/lujipeka.jpg" artiste="LUJIPEKA"> </card>
-  <card image="/img/roshi.jpg" artiste="CAPTAINE ROSHI"> </card>
-  <card image="/img/bakari.jpg" artiste="BAKARI"> </card>
+  <card image="../public/img/damso.jpg" artiste="DAMSO"> </card>
+  <card image="../public/img/dinos.jpg" artiste="DINOS"> </card>
+  <card image="../public/img/ziak.jpg" artiste="ZIAK"> </card>
+  <card image="../public/img/disiz.jpg" artiste="DISIZ"> </card>
+  <card image="../public/img/lefa.jpg" artiste="LEFA"> </card>
+  <card image="../public/img/lujipeka.jpg" artiste="LUJIPEKA"> </card>
+  <card image="../public/img/roshi.jpg" artiste="CAPTAINE ROSHI"> </card>
+  <card image="../public/img/bakari.jpg" artiste="BAKARI"> </card>
 </div>
 </template>
 

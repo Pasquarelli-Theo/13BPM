@@ -5,7 +5,7 @@
         <div class="flex items-center">
           <RouterLink to="/">
             <div class="w-40">
-              <img src="/icones/Logo.webp" alt="Logo Tafari" />
+              <img src="../public/icones/Logo.webp" alt="Logo Tafari" />
             </div>
           </RouterLink>
         </div>
@@ -37,7 +37,7 @@
     <footer class="mt-8 bg-red-100 text-white">
       <div class="flex place-content-center p-10">
         <RouterLink to="/">
-          <img src="/icones/Logo_blanc.png" alt="Logo 13BPM"
+          <img src="../public/icones/Logo_blanc.png" alt="Logo 13BPM"
         /></RouterLink>
       </div>
       <div class="flex place-content-center">

@@ -17,7 +17,7 @@
         l'espère, ne sera pas la dernière !
       </p>
     </div>
-    <img src="/public/img/damso_festival.jpg" class="p-5" />
+    <img src="../public/img/damso_festival.jpg" class="p-5" />
     <div class="mt-9 ml-5 mr-5 bg-white p-2">
       <p class="p-2 font-bold">Plus d’info</p>
       <p>
@@ -31,6 +31,6 @@
         (danse, freestyle, etc ...)
       </p>
     </div>
-    <img src="/public/img/hanny-naibaho-aWXVxy8BSzc-unsplash.jpg" class="p-5" />
+    <img src="../public/img/hanny-naibaho-aWXVxy8BSzc-unsplash.jpg" class="p-5" />
   </div>
 </template>

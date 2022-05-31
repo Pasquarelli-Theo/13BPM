@@ -16,14 +16,14 @@
       ><bouton texte="PETITE SCÈNE"></bouton
     ></RouterLink>
   </div>
-  <card2 image="/img/disiz.jpg" artiste="DISIZ" jour="Jour 2" heure="Petite scène - 19h00"> </card2>
-  <card2 image="/img/bakari.jpg" artiste="BAKARI" jour="Jour 2" heure="Petite scène - 20h00"> </card2>
-  <card2 image="/img/ziak.jpg" artiste="ZIAK" jour="Jour 2" heure="Grande scène - 20h00"> </card2>
-  <card2 image="/img/lefa.jpg" artiste="LEFA" jour="Jour 2" heure="Grande scène - 21h30"> </card2>
-  <card2 image="/img/roshi.jpg" artiste="CAPTAINE ROSHI" jour="Jour 2" heure="Petite scène - 21h30"> </card2>
-  <card2 image="/img/lujipeka.jpg" artiste="LUJIPEKA" jour="Jour 1" heure="Petite scène - 22h30"> </card2>
-  <card2 image="/img/dinos.jpg" artiste="DINOS" jour="Jour 2" heure="Grande scène - 22h30"> </card2>
-  <card2 image="/img/damso.jpg" artiste="DAMSO" jour="Jour 2" heure="Grande scène - 00h00"> </card2>
+  <card2 image="../public/img/disiz.jpg" artiste="DISIZ" jour="Jour 2" heure="Petite scène - 19h00"> </card2>
+  <card2 image="../public/img/bakari.jpg" artiste="BAKARI" jour="Jour 2" heure="Petite scène - 20h00"> </card2>
+  <card2 image="../public/img/ziak.jpg" artiste="ZIAK" jour="Jour 2" heure="Grande scène - 20h00"> </card2>
+  <card2 image="../public/img/lefa.jpg" artiste="LEFA" jour="Jour 2" heure="Grande scène - 21h30"> </card2>
+  <card2 image="../public/img/roshi.jpg" artiste="CAPTAINE ROSHI" jour="Jour 2" heure="Petite scène - 21h30"> </card2>
+  <card2 image="../public/img/lujipeka.jpg" artiste="LUJIPEKA" jour="Jour 1" heure="Petite scène - 22h30"> </card2>
+  <card2 image="../public/img/dinos.jpg" artiste="DINOS" jour="Jour 2" heure="Grande scène - 22h30"> </card2>
+  <card2 image="../public/img/damso.jpg" artiste="DAMSO" jour="Jour 2" heure="Grande scène - 00h00"> </card2>
 </div>
 </template>
 

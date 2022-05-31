@@ -10,7 +10,7 @@
       Trouvez nous plus facilement !
     </p>
     <div class="flex place-content-center">
-    <img src="/public/img/plan.jpg">
+    <img src="../public/img/plan.jpg">
     </div>
 
 

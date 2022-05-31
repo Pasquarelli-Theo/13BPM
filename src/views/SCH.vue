@@ -2,8 +2,9 @@
   <div>
     <img
       class="w-full"
-      src="/public/img/sch_partiste.jpg"
-      alt="image du rappeur SCH"/>
+      src="../public/img/sch_partiste.jpg"
+      alt="image du rappeur SCH"
+    />
     <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
       Julien Schwarzer plus connu sous le pseudonyme SCH est un rappeur français
       originaire de Marseille. Le rappeur d’origine allemande du côté de son
@@ -20,17 +21,20 @@
     </p>
     <div class="flex place-content-center">
       <a href="https://fr-fr.facebook.com/schmathafack" target="_blank"
-        ><img src="public/icones/facebook.png" alt="logo facebook" class="w-12"
+        ><img
+          src="../public/icones/facebook.png"
+          alt="logo facebook"
+          class="w-12"
       /></a>
       <a href="https://www.instagram.com/sch/?hl=fr" target="_blank"
         ><img
-          src="public/icones/instagram.png"
+          src="../public/icones/instagram.png"
           alt="logo instagram"
           class="ml-5 mt-2 w-8"
       /></a>
       <a href="https://twitter.com/sch_mathafack" target="_blank"
         ><img
-          src="public/icones/twitter.png"
+          src="../public/icones/twitter.png"
           alt="logo twitter"
           class="ml-5 mt-2 w-8"
       /></a>
@@ -38,7 +42,7 @@
         href="https://www.youtube.com/channel/UCeBu6AFsaPVElhFzlj5hetg/videos?app=desktop"
         target="_blank"
         ><img
-          src="public/icones/youtube.png"
+          src="../public/icones/youtube.png"
           alt="logo youtube"
           class="ml-5 w-12"
       /></a>
