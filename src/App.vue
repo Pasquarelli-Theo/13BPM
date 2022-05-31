@@ -1,70 +1,34 @@
 <template>
   <div class="bg-light_grey">
-    <header class="sticky top-0 z-40 mt-2 h-12 w-full bg-white px-3">
+ <header class="sticky top-0 z-40 h-16 w-full bg-white px-3">
       <div class="flex h-full w-full items-center justify-between">
         <div class="flex items-center">
           <RouterLink to="/">
-            <div class="w-40">
-              <img src="/icones/Logo.webp" alt="Logo 13BPM" />
-            </div>
+                      <div class="w-40">
+            <img src="/icones/Logo.webp" alt="Logo Tafari" />
+                      </div>
           </RouterLink>
         </div>
         <div class="lg:hidden">
           <MenuIcon class="w-8 cursor-pointer" @click="MenuOpen = !MenuOpen" />
         </div>
         <nav
-          class="absolute left-0 top-0 h-screen w-full -translate-y-[200%] bg-red-100 pl-2 text-lg lg:relative lg:top-0 lg:w-fit lg:translate-y-0 lg:bg-transparent"
+          class="absolute left-0 top-0 h-screen w-full -translate-y-[200%] bg-red-100 pl-2 text-lg lg:relative lg:-top-16 lg:h-min lg:w-fit lg:translate-y-0 lg:bg-transparent"
           :class="MenuOpen && 'translate-y-0'"
         >
-        <XIcon
-            class="float-right mr-2 mt-1 w-10 lg:hidden"
+          <XIcon
+            class="float-right mr-2 mt-3 w-10 lg:hidden"
             @click="MenuOpen = !MenuOpen"
           />
           <ul
-            class="text-blanc flex flex-col gap-8 py-4 font-bold uppercase lg:flex-row"
+            class="mt-32 ml-20 flex flex-col gap-8 py-4 font-bold uppercase lg:flex-row"
           >
-          <RouterLink to="/Home"
-              ><p
-                class="ml-5 mb-6 mt-10 w-80 -rotate-6 bg-black font-archivo-black text-xl text-white"
-              >
-                ACCUEIL
-              </p></RouterLink
-            >
-            <RouterLink to="/Programmation"
-              ><p
-                class="ml-5 mb-3 mt-3 w-80   rotate-6 bg-black font-archivo-black text-xl text-white"
-              >
-                PROGRAMMATION
-              </p></RouterLink
-            >
-            <RouterLink to="/Artistes"
-              ><p
-                class="ml-5 mb-3 mt-3 w-80  bg-black font-archivo-black text-xl text-white"
-              >
-                ARTISTES
-              </p></RouterLink
-            >
-            <RouterLink to="/Festival"
-              ><p
-                class="ml-5 mb-3 mt-3 w-80 -rotate-6 bg-black font-archivo-black text-xl text-white"
-              >
-                LE FESTIVAL
-              </p></RouterLink
-            >
-            <RouterLink to="/Concert"
-              ><p
-                class="ml-5 mb-3 mt-3 w-80 rotate- bg-black font-archivo-black text-xl text-white"
-              >
-                CONCERTS
-              </p></RouterLink
-            >
-            <RouterLink to="/Contact"
-              ><p
-                class="ml-5 mb-3 mt-3 w-80 -rotate-3 bg-black font-archivo-black text-xl text-white"
-              >
-                CONTACT
-              </p></RouterLink
-            >
+            <RouterLink to="/" class="lg:hidden">accueil</RouterLink>
+            <RouterLink to="/Programmation">programmation</RouterLink>
+            <RouterLink to="/Artistes">artistes</RouterLink>
+            <RouterLink to="/Festival">le festival</RouterLink>
+            <RouterLink to="/Concert">concert</RouterLink>
+            <RouterLink to="/Contact">contact</RouterLink>
           </ul>
         </nav>
       </div>
