@@ -13,13 +13,13 @@
     ></RouterLink>
   </div>
   <RouterLink to="../public/sch"><card image="/img/sch.jpg" artiste="SCH"> </card></RouterLink>
-  <card image="../public/img/sfera.jpg" artiste="SFERA EBBASTA"> </card>
-  <card image="../public/img/leto.jpg" artiste="LETO"> </card>
-  <card image="../public/img/luv.jpg" artiste="LUV RESVAL"> </card>
-  <card image="../public/img/capo.jpg" artiste="CAPO PLAZA"> </card>
-  <card image="../public/img/nahir.jpg" artiste="NAHIR"> </card>
-  <card image="../public/img/coyott.jpg" artiste="COYOTT JO BASTARD"> </card>
-  <card image="../public/img/mojixsboy.jpg" artiste="MOJI X SBOY"> </card>
+  <card image="/img/sfera.jpg" artiste="SFERA EBBASTA"> </card>
+  <card image="/img/leto.jpg" artiste="LETO"> </card>
+  <card image="/img/luv.jpg" artiste="LUV RESVAL"> </card>
+  <card image="/img/capo.jpg" artiste="CAPO PLAZA"> </card>
+  <card image="/img/nahir.jpg" artiste="NAHIR"> </card>
+  <card image="/img/coyott.jpg" artiste="COYOTT JO BASTARD"> </card>
+  <card image="/img/mojixsboy.jpg" artiste="MOJI X SBOY"> </card>
 </div>
 </template>
 

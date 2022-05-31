@@ -16,13 +16,13 @@
       ><bouton texte="PETITE SCÈNE"></bouton
     ></RouterLink>
   </div>
-  <card2 image="../public/img/coyott.jpg" artiste="COYOTT JO BASTARD" jour="Jour 1" heure="Petite scène - 19h00"> </card2>
-  <card2 image="../public/img/mojixsboy.jpg" artiste="MOJI X SBOY" jour="Jour 1" heure="Petite scène - 20h00"> </card2>
-  <card2 image="../public/img/luv.jpg" artiste="LUV RESVAL" jour="Jour 2" heure="Grande scène - 20h00"> </card2>
-  <card2 image="../public/img/leto.jpg" artiste="LETO" jour="Jour 1" heure="Grande scène - 21h30"> </card2>
-  <card2 image="../public/img/capo.jpg" artiste="CAPO PLAZA" jour="Jour 1" heure="Petite scène - 21h30"> </card2>
-  <card2 image="../public/img/nahir.jpg" artiste="NAHIR" jour="Jour 1" heure="Petite scène - 22h30"> </card2>
-  <card2 image="../public/img/sfera.jpg" artiste="SFERA EBBASTA" jour="Jour 1" heure="Grande scène - 22h30"> </card2>
+  <card2 image="/img/coyott.jpg" artiste="COYOTT JO BASTARD" jour="Jour 1" heure="Petite scène - 19h00"> </card2>
+  <card2 image="/img/mojixsboy.jpg" artiste="MOJI X SBOY" jour="Jour 1" heure="Petite scène - 20h00"> </card2>
+  <card2 image="/img/luv.jpg" artiste="LUV RESVAL" jour="Jour 2" heure="Grande scène - 20h00"> </card2>
+  <card2 image="/img/leto.jpg" artiste="LETO" jour="Jour 1" heure="Grande scène - 21h30"> </card2>
+  <card2 image="/img/capo.jpg" artiste="CAPO PLAZA" jour="Jour 1" heure="Petite scène - 21h30"> </card2>
+  <card2 image="/img/nahir.jpg" artiste="NAHIR" jour="Jour 1" heure="Petite scène - 22h30"> </card2>
+  <card2 image="/img/sfera.jpg" artiste="SFERA EBBASTA" jour="Jour 1" heure="Grande scène - 22h30"> </card2>
   <RouterLink to="../public/sch"><card2 image="/img/sch.jpg" artiste="SCH" jour="Jour 1" heure="Grande scène - 00h00"> </card2></RouterLink>
 </div>
 </template>
