@@ -3,7 +3,7 @@
     class="m-10 grid grid-flow-row-dense grid-cols-1 rounded-lg bg-red-100"
   >
     <img
-      class="col-span-3 h-48 w-full rounded-t-lg object-cover"
+      class="col-span-3 hover:blur-sm h-48 w-full rounded-t-lg object-cover"
       :src="image"
       alt=""
     />

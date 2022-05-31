@@ -24,11 +24,11 @@
             class="mt-32 ml-20 flex flex-col gap-8 py-4 font-bold uppercase lg:flex-row"
           >
             <RouterLink to="/" class="lg:hidden">accueil</RouterLink>
-            <RouterLink to="/Programmation">programmation</RouterLink>
-            <RouterLink to="/Artistes">artistes</RouterLink>
-            <RouterLink to="/Festival">le festival</RouterLink>
-            <RouterLink to="/Concert">concert</RouterLink>
-            <RouterLink to="/Contact">contact</RouterLink>
+            <RouterLink to="/Programmation" @click="menuVisible = !menuVisible">programmation</RouterLink>
+            <RouterLink to="/Artistes" @click="menuVisible = !menuVisible">artistes</RouterLink>
+            <RouterLink to="/Festival" @click="menuVisible = !menuVisible">le festival</RouterLink>
+            <RouterLink to="/Concert" @click="menuVisible = !menuVisible">concert</RouterLink>
+            <RouterLink to="/Contact" @click="menuVisible = !menuVisible">contact</RouterLink>
           </ul>
         </nav>
       </div>
@@ -43,7 +43,7 @@
       <div class="flex place-content-center">
         <a href="https://fr-fr.facebook.com/" target="_blank"
           ><img
-            src="../public/icones/facebook_w.png"
+            src="../public/icones/facebookw.png"
             alt="logo facebook"
             class="mt-2 w-8"
         /></a>
@@ -73,6 +73,8 @@
 <script>
 import { MenuIcon } from "@heroicons/vue/outline";
 import { XIcon } from "@heroicons/vue/outline";
+import {ref} from 'vue';
+const menuVisible = ref(true);
 export default {
   name: "App",
   components: { MenuIcon, XIcon },
@@ -81,3 +83,6 @@ export default {
   },
 };
 </script>
+
+
+

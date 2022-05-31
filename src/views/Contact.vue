@@ -23,7 +23,7 @@
     <div class="ml-auto mr-auto grid w-3/5">
       <form action="" class="grid-cols-1">
         <div class=" flex items-start rounded-md bg-white">
-          <UserIcon class="h-6" /><input
+          <UserIcon class="h-6 mr-2" /><input
             type="text"
             placeholder="Nom"
             class="text-gray-500 mt-1 w-full rounded-md bg-white text-justify text-sm"
@@ -31,7 +31,7 @@
         </div>
 
         <div class="mt-4 flex items-start rounded-md bg-white">
-          <PencilIcon class="h-6" /><input
+          <PencilIcon class="h-6 mr-2" /><input
             type="text"
             placeholder="Email"
             class="text-gray-500 mt- w-full rounded-md bg-white text-justify text-sm"
@@ -39,7 +39,7 @@
         </div>
 
         <div class="mt-4 flex items-start rounded-md bg-white">
-          <MailIcon class="h-6" /><textarea
+          <MailIcon class="h-6 mr-2" /><textarea
             name="message"
             class="font-open-sans block w-full rounded-md text-sm focus:outline-none"
             rows="3"

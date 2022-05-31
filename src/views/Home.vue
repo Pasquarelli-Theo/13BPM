@@ -18,11 +18,11 @@
     </h2>
     <div class="grid grid-flow-row-dense lg:grid-cols-2 md:grid-cols-2 sm:mr-20 sm:ml-20">
     <RouterLink to="/Programmation"
-      ><div class="mb-10 flex place-content-center">
+      ><div class="mb-10 flex place-content-center hover:blur-sm">
         <img src="../../public/img/vers-prog.png" class="w-9/12" /></div
     ></RouterLink>
     <RouterLink to="/Festival"
-      ><div class="flex place-content-center">
+      ><div class="flex place-content-center hover:blur-sm">
         <img
           src="../../public/img/delta-festival-aix-marseille.jpg"
           class="w-9/12"
