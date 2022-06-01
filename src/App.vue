@@ -21,7 +21,7 @@
             @click="MenuOpen = !MenuOpen"
           />
           <ul
-            class="mt-32 ml-20 flex flex-col gap-8 py-4 font-bold uppercase lg:flex-row"
+            class="mt-32 ml-20 flex flex-col gap-8 py-4 font-bold text-white uppercase lg:flex-row"
           >
             <RouterLink to="/" class="lg:hidden">accueil</RouterLink>
             <RouterLink to="/Programmation" @click="menuVisible = !menuVisible">programmation</RouterLink>
