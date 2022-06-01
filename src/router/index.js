@@ -14,6 +14,7 @@ import SCH from "../views/SCH.vue";
 import Damso from "../views/Damso.vue";
 import Dinos from "../views/Dinos.vue";
 import Sfera from "../views/Sfera.vue";
+import Lefa from "../views/Lefa.vue";
 import MentionsLegales from"../views/MentionsLegales.vue";
 import Contact from "../views/Contact.vue";
 import Page404 from "../views/Page404.vue";
@@ -44,6 +45,7 @@ const router = createRouter({
     { path: "/Damso", name: "Damso", component: Damso },
     { path: "/Dinos", name: "Dinos", component: Dinos },
     { path: "/Sfera", name: "Sfera", component: Sfera },
+    { path: "/Lefa", name: "Lefa", component: Lefa },
     {
       path: "/MentionsLegales",
       name: "MentionsLegales",

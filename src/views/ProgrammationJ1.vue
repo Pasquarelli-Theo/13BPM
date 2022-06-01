@@ -28,7 +28,7 @@
       <card image="/img/luv.jpg" artiste="LUV RESVAL"> </card>
       <card image="/img/capo.jpg" artiste="CAPO PLAZA"> </card>
       <card image="/img/nahir.jpg" artiste="NAHIR"> </card>
-      <card image="/img/coyott.jpg" artiste="COYOTT JO BASTARD"> </card>
+      <card image="/img/coyott.jpg" artiste="COYOTE JO BASTARD"> </card>
       <card image="/img/mojixsboy.jpg" artiste="MOJI X SBOY"> </card>
     </div>
   </div>

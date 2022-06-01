@@ -62,7 +62,7 @@
     </card2>
     <card2
       image="/img/coyott.jpg"
-      artiste="COYOTT JO BASTARD"
+      artiste="COYOTE JO BASTARD"
       jour="Jour 1"
       heure="Petite scène - 19h00"
     >
