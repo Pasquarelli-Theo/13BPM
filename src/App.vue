@@ -21,14 +21,29 @@
             @click="MenuOpen = !MenuOpen"
           />
           <ul
-            class="mt-32 ml-20 flex flex-col gap-8 py-4 font-bold text-white uppercase lg:flex-row"
+            class="mt-32 ml-20 flex flex-col gap-8 py-4 font-bold uppercase text-white md:text-black lg:flex-row lg:text-black"
           >
-            <RouterLink to="/" class="lg:hidden">accueil</RouterLink>
-            <RouterLink to="/Programmation" @click="menuVisible = !menuVisible">programmation</RouterLink>
-            <RouterLink to="/Artistes" @click="menuVisible = !menuVisible">artistes</RouterLink>
-            <RouterLink to="/Festival" @click="menuVisible = !menuVisible">le festival</RouterLink>
-            <RouterLink to="/Concert" @click="menuVisible = !menuVisible">concert</RouterLink>
-            <RouterLink to="/Contact" @click="menuVisible = !menuVisible">contact</RouterLink>
+            <RouterLink
+              to="/Home"
+              class="lg:hidden"
+              @click="MenuOpen = !MenuOpen"
+              >accueil</RouterLink
+            >
+            <RouterLink to="/Programmation" @click="MenuOpen = !MenuOpen"
+              >programmation</RouterLink
+            >
+            <RouterLink to="/Artistes" @click="MenuOpen = !MenuOpen"
+              >artistes</RouterLink
+            >
+            <RouterLink to="/Festival" @click="MenuOpen = !MenuOpen"
+              >le festival</RouterLink
+            >
+            <RouterLink to="/Concert" @click="MenuOpen = !MenuOpen"
+              >concert</RouterLink
+            >
+            <RouterLink to="/Contact" @click="MenuOpen = !MenuOpen"
+              >contact</RouterLink
+            >
           </ul>
         </nav>
       </div>
@@ -73,7 +88,7 @@
 <script>
 import { MenuIcon } from "@heroicons/vue/outline";
 import { XIcon } from "@heroicons/vue/outline";
-import {ref} from 'vue';
+import { ref } from "vue";
 const menuVisible = ref(true);
 export default {
   name: "App",
@@ -83,6 +98,3 @@ export default {
   },
 };
 </script>
-
-
-
