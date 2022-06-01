@@ -19,74 +19,85 @@
       ></RouterLink>
       <bouton class="w-32" texte="GRANDE SCÈNE"></bouton>
       <RouterLink to="/ConcertPS"
-        ><bouton class="w-32 ml-9" texte="PETITE SCÈNE"></bouton
+        ><bouton class="ml-9 w-32" texte="PETITE SCÈNE"></bouton
       ></RouterLink>
     </div>
     <div
       class="grid grid-flow-row-dense sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
     >
-    <RouterLink to="../public/sch"
-      ><card2
-        image="/img/sch.jpg"
-        artiste="SCH"
-        jour="Jour 1"
-        heure="Grande scène - 00h00"
-      >
-      </card2
-    ></RouterLink>
+      <RouterLink to="../public/sch"
+        ><card2
+          image="/img/sch.jpg"
+          artiste="SCH"
+          jour="Jour 1"
+          heure="Grande scène - 00h00"
+        >
+        </card2
+      ></RouterLink>
       <RouterLink to="../public/Damso"
         ><card2
-        image="/img/damso.jpg"
-        artiste="DAMSO"
-        jour="Jour 2"
-        heure="Grande scène - 00h00"
-      >
-      </card2></RouterLink>
+          image="/img/damso.jpg"
+          artiste="DAMSO"
+          jour="Jour 2"
+          heure="Grande scène - 00h00"
+        >
+        </card2
+      ></RouterLink>
       <RouterLink to="../public/Dinos"
         ><card2
-        image="/img/dinos.jpg"
-        artiste="DINOS"
-        jour="Jour 2"
-        heure="Grande scène - 22h30"
-      >
-      </card2></RouterLink>
+          image="/img/dinos.jpg"
+          artiste="DINOS"
+          jour="Jour 2"
+          heure="Grande scène - 22h30"
+        >
+        </card2
+      ></RouterLink>
       <RouterLink to="../public/Sfera"
         ><card2
-        image="/img/sfera.jpg"
-        artiste="SFERA EBBASTA"
-        jour="Jour 1"
-        heure="Grande scène - 22h30"
-      >
-      </card2></RouterLink>
-    <card2
-      image="/img/leto.jpg"
-      artiste="LETO"
-      jour="Jour 1"
-      heure="Grande scène - 21h30"
-    >
-    </card2>
-    <card2
-      image="/img/ziak.jpg"
-      artiste="ZIAK"
-      jour="Jour 2"
-      heure="Grande scène - 20h00"
-    >
-    </card2>
-    <card2
-      image="/img/luv.jpg"
-      artiste="LUV RESVAL"
-      jour="Jour 2"
-      heure="Grande scène - 20h00"
-    >
-    </card2>
-    <card2
-      image="/img/lefa.jpg"
-      artiste="LEFA"
-      jour="Jour 2"
-      heure="Grande scène - 21h30"
-    >
-    </card2>
-  </div>
+          image="/img/sfera.jpg"
+          artiste="SFERA EBBASTA"
+          jour="Jour 1"
+          heure="Grande scène - 22h30"
+        >
+        </card2
+      ></RouterLink>
+      <RouterLink to="../public/Leto"
+        ><card2
+          image="/img/leto.jpg"
+          artiste="LETO"
+          jour="Jour 1"
+          heure="Grande scène - 21h30"
+        >
+        </card2
+      ></RouterLink>
+      <RouterLink to="../public/Ziak"
+        ><card2
+          image="/img/ziak.jpg"
+          artiste="ZIAK"
+          jour="Jour 2"
+          heure="Grande scène - 20h00"
+        >
+        </card2
+      ></RouterLink>
+      <RouterLink to="../public/Luv"
+        ><card2
+          image="/img/luv.jpg"
+          artiste="LUV RESVAL"
+          jour="Jour 2"
+          heure="Grande scène - 20h00"
+        >
+        </card2
+      ></RouterLink>
+      <RouterLink to="../public/Lefa"
+        ><card2
+          image="/img/lefa.jpg"
+          artiste="LEFA"
+          jour="Jour 2"
+          heure="Grande scène - 21h30"
+        >
+        </card2
+      ></RouterLink>
+    </div>
   </div>
 </template>
 
