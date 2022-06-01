@@ -15,6 +15,7 @@ import Damso from "../views/Damso.vue";
 import Dinos from "../views/Dinos.vue";
 import Sfera from "../views/Sfera.vue";
 import Lefa from "../views/Lefa.vue";
+import Lefa from "../views/Lefa.vue";
 import MentionsLegales from"../views/MentionsLegales.vue";
 import Contact from "../views/Contact.vue";
 import Page404 from "../views/Page404.vue";
