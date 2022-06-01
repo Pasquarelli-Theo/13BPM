@@ -3,7 +3,7 @@
     <img
       class="w-full"
       src="../../public/img/luv_artiste.jpg"
-      alt="image du rappeur SCH"
+      alt="image du rappeur Luv Resval"
     />
     <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
       Luv Resval est né le 6 janvier 1998 et a grandit dans l’Essonne. Très

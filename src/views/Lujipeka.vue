@@ -3,7 +3,7 @@
     <img
       class="w-full"
       src="../../public/img/lujipeka_artiste.jpg"
-      alt="image du rappeur SCH"
+      alt="image du rappeur Lujipeka"
     />
     <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
       Lujipeka, de son vrai nom Lucas Taupin, est né et a grandi à Rennes, en

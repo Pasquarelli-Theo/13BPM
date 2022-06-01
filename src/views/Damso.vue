@@ -3,7 +3,7 @@
     <img
       class="w-full"
       src="../../public/img/damso_artiste.jpg"
-      alt="image du rappeur SCH"
+      alt="image du rappeur Damso"
     />
     <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
       Né le 10 mai 1992 à Kinshasa, William Kalumbi A.K.A Damso est un

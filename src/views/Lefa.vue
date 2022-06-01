@@ -3,7 +3,7 @@
     <img
       class="w-full"
       src="../../public/img/lefa_artiste.jpg"
-      alt="image du rappeur SCH"
+      alt="image du rappeur Lefa"
     />
     <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
       Lefa, de son vrai nom Abdel Karim Fall, né le 28 novembre 1985 à Paris,

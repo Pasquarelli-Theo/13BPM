@@ -3,7 +3,7 @@
     <img
       class="w-full"
       src="../../public/img/dinos_artiste.jpg"
-      alt="image du rappeur SCH"
+      alt="image du rappeur Dinos"
     />
     <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
       Dinos, de son vrai nom Jules Jomby, né à Douala capitale économique du

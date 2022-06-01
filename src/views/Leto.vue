@@ -3,7 +3,7 @@
     <img
       class="w-full"
       src="../../public/img/leto_artiste.jpg"
-      alt="image du rappeur SCH"
+      alt="image du rappeur Leto"
     />
     <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
       De son vrai nom Henoc Pierrick Bofenda, Leto est un artiste-rappeur

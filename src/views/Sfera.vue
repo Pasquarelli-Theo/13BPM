@@ -3,7 +3,7 @@
     <img
       class="w-full"
       src="../../public/img/sfera_artiste.jpg"
-      alt="image du rappeur SCH"
+      alt="image du rappeur Sfera Ebbasta"
     />
     <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
       Sfera Ebbasta, de son vrai nom Gionata Boschetti, né le 7 décembre 1992 à
