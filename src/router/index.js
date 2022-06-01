@@ -11,6 +11,9 @@ import ConcertJ2 from "../views/ConcertJ2.vue";
 import ConcertGS from "../views/ConcertGS.vue";
 import ConcertPS from "../views/ConcertPS.vue";
 import SCH from "../views/SCH.vue";
+import Damso from "../views/Damso.vue";
+import Dinos from "../views/Dinos.vue";
+import Sfera from "../views/Sfera.vue";
 import MentionsLegales from"../views/MentionsLegales.vue";
 import Contact from "../views/Contact.vue";
 import Page404 from "../views/Page404.vue";
@@ -18,7 +21,7 @@ import Page404 from "../views/Page404.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: "/Home", name: "Home", component: Home },
+    { path: "/", name: "Home", component: Home },
     { path: "/Programmation", name: "Programmation", component: Programmation },
     {
       path: "/ProgrammationJ1",
@@ -38,6 +41,9 @@ const router = createRouter({
     { path: "/ConcertGS", name: "ConcertGS", component: ConcertGS },
     { path: "/ConcertPS", name: "ConcertPS", component: ConcertPS },
     { path: "/SCH", name: "SCH", component: SCH },
+    { path: "/Damso", name: "Damso", component: Damso },
+    { path: "/Dinos", name: "Dinos", component: Dinos },
+    { path: "/Sfera", name: "Sfera", component: Sfera },
     {
       path: "/MentionsLegales",
       name: "MentionsLegales",

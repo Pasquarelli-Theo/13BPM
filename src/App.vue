@@ -24,7 +24,7 @@
             class="mt-32 ml-20 flex flex-col gap-8 py-4 font-bold uppercase text-white md:text-black lg:flex-row lg:text-black"
           >
             <RouterLink
-              to="/Home"
+              to="/"
               class="lg:hidden"
               @click="MenuOpen = !MenuOpen"
               >accueil</RouterLink
@@ -51,7 +51,7 @@
     <RouterView />
     <footer class="mt-8 bg-red-100 text-white">
       <div class="flex place-content-center p-10">
-        <RouterLink to="/Home">
+        <RouterLink to="/">
           <img src="../public/icones/Logo_blanc.png" alt="Logo 13BPM"
         /></RouterLink>
       </div>

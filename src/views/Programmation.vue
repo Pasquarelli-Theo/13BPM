@@ -18,9 +18,12 @@
     <RouterLink to="/sch"
       ><card image="/img/sch.jpg" artiste="SCH"> </card
     ></RouterLink>
-    <card image="/img/damso.jpg" artiste="DAMSO"> </card>
-    <card image="/img/dinos.jpg" artiste="DINOS"> </card>
-    <card image="/img/sfera.jpg" artiste="SFERA EBBASTA"> </card>
+    <RouterLink to="/Damso"
+      ><card image="/img/damso.jpg" artiste="DAMSO"> </card></RouterLink>
+    <RouterLink to="/Dinos"
+      ><card image="/img/dinos.jpg" artiste="DINOS"> </card></RouterLink>
+    <RouterLink to="/Sfera"
+      ><card image="/img/sfera.jpg" artiste="SFERA EBBASTA"> </card></RouterLink>
     <card image="/img/leto.jpg" artiste="LETO"> </card>
     <card image="/img/ziak.jpg" artiste="ZIAK"> </card>
     <card image="/img/luv.jpg" artiste="LUV RESVAL"> </card>

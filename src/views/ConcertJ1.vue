@@ -67,13 +67,14 @@
       heure="Petite scène - 22h30"
     >
     </card2>
-    <card2
-      image="/img/sfera.jpg"
-      artiste="SFERA EBBASTA"
-      jour="Jour 1"
-      heure="Grande scène - 22h30"
-    >
-    </card2>
+      <RouterLink to="../public/Sfera"
+        ><card2
+        image="/img/sfera.jpg"
+        artiste="SFERA EBBASTA"
+        jour="Jour 1"
+        heure="Grande scène - 22h30"
+      >
+      </card2></RouterLink>
     <RouterLink to="../public/sch"
       ><card2
         image="/img/sch.jpg"

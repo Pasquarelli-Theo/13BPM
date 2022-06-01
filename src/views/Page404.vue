@@ -1,5 +1,5 @@
 <template>
-  <h1 class="m-5 text-center font-viga text-3xl">Page 404</h1>
+  <h1 class="m-5 text-center font-viga text-3xl">Error 404</h1>
   <div
     class="grid grid-flow-row-dense grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
   >
@@ -15,7 +15,7 @@
         vers la page d'accueil ou contactez-nous en cas de question !
       </p>
       <div class="flex place-content-center">
-        <RouterLink to="/Home"
+        <RouterLink to="/"
           ><bouton class="mr-3 h-12 w-32" texte="Accueil"></bouton
         ></RouterLink>
         <RouterLink to="/Contact"

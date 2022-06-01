@@ -34,27 +34,30 @@
         >
         </card2
       ></RouterLink>
-      <card2
+      <RouterLink to="../public/Damso"
+        ><card2
         image="/img/damso.jpg"
         artiste="DAMSO"
         jour="Jour 2"
         heure="Grande scène - 00h00"
       >
-      </card2>
-      <card2
+      </card2></RouterLink>
+      <RouterLink to="../public/Dinos"
+        ><card2
         image="/img/dinos.jpg"
         artiste="DINOS"
         jour="Jour 2"
         heure="Grande scène - 22h30"
       >
-      </card2>
-      <card2
+      </card2></RouterLink>
+      <RouterLink to="../public/Sfera"
+        ><card2
         image="/img/sfera.jpg"
         artiste="SFERA EBBASTA"
         jour="Jour 1"
         heure="Grande scène - 22h30"
       >
-      </card2>
+      </card2></RouterLink>
       <card2
         image="/img/leto.jpg"
         artiste="LETO"
