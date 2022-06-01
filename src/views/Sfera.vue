@@ -2,44 +2,43 @@
   <div>
     <img
       class="w-full"
-      src="../../public/img/sch_partiste.jpg"
+      src="../../public/img/sfera_artiste.jpg"
       alt="image du rappeur SCH"
     />
     <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
-      Julien Schwarzer plus connu sous le pseudonyme SCH est un rappeur français
-      originaire de Marseille. Le rappeur d’origine allemande du côté de son
-      père, s’inspire d’influences provenant des Etats-Unis comme Eminem et 50
-      Cent mais également de Joe Dassin ou Elton John.<br />
-      <br />À l’âge de 15 ans, il fait ses débuts dans le rap en postant la
-      plupart de ses sons sur son blog personnel. Il publie quelques singles sur
-      YouTube en 2014-2015, ce qui fait qu’il est remarqué par Lacrim, la star
-      du rap français. Il intervient en 2015 sur la mixtape R.I.P.R.O Vol. 1 de
-      ce dernier ; ce qui le propulsa dans sa carrière. Suite à sa mixtape
-      sortie en 2015 grâce à laquelle il connaît le succès il deviennt un figure
-      du rap français et réalise en 2021 le deuxième meilleur démarrage pour un
-      album rap avec JULIUS 2 qui s’écoule à 63 851 exemplaires en une semaine.
+      Sfera Ebbasta, de son vrai nom Gionata Boschetti, né le 7 décembre 1992 à
+      Sesto San Giovanni en Lombardie, est un rappeur italien. Aidé par son
+      travail avec le producteur Charlie Charles, il est considéré comme l'un
+      des pionniers de la trap en Italie. En France, le jeune rappeur se fait
+      connaitre à la suite de son apparition dans Anarchie, le premier album de
+      SCH sur le titre Cartine Cartier.<br />
+      <br />Sfera devient mondialement connu avec son albume Rockstar sur lequel
+      on retrouve notamment Quavo. Plus tard il collaborera avec d’autres
+      artistes francophone comme Lacrim, Lous and the Yakuza ou Coyote Jo
+      Bastard mais également des artistes internationaux tel que Offset, Future
+      ou J Balvin.
     </p>
     <div class="flex place-content-center">
-      <a href="https://fr-fr.facebook.com/schmathafack" target="_blank"
+      <a href="https://fr-fr.facebook.com/sferaebbastaofficial" target="_blank"
         ><img
           src="../../public/icones/facebook.png"
           alt="logo facebook"
           class="w-12"
       /></a>
-      <a href="https://www.instagram.com/sch/?hl=fr" target="_blank"
+      <a href="https://www.instagram.com/sferaebbasta/?hl=fr" target="_blank"
         ><img
           src="../../public/icones/instagram.png"
           alt="logo instagram"
           class="ml-5 mt-2 w-8"
       /></a>
-      <a href="https://twitter.com/sch_mathafack" target="_blank"
+      <a href="https://twitter.com/sferaebbasta" target="_blank"
         ><img
           src="../../public/icones/twitter.png"
           alt="logo twitter"
           class="ml-5 mt-2 w-8"
       /></a>
       <a
-        href="https://www.youtube.com/channel/UCeBu6AFsaPVElhFzlj5hetg/videos?app=desktop"
+        href="https://www.youtube.com/channel/UCMG7SfUy9pOybrhXEhEkdVQ"
         target="_blank"
         ><img
           src="../../public/icones/youtube.png"
@@ -53,7 +52,7 @@
     </div>
     <div class="ml-28 flex">
       <LocationMarkerIcon class="w-8" />
-      <p class="ml-2 font-viga">Jour 1 - 00h00</p>
+      <p class="ml-2 font-viga">Jour 1 - 22h30</p>
     </div>
   </div>
 </template>
