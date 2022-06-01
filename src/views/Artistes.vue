@@ -6,21 +6,21 @@
   </h2>
     <div class="grid grid-flow-row-dense lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 ">
 <RouterLink to="/sch"><card image="/img/sch.jpg" artiste="SCH"> </card></RouterLink>
-  <card image="/img/damso.jpg" artiste="DAMSO"> </card>
-  <card image="/img/dinos.jpg" artiste="DINOS"> </card>
-  <card image="/img/sfera.jpg" artiste="SFERA EBBASTA"> </card>
-  <card image="/img/leto.jpg" artiste="LETO"> </card>
-  <card image="/img/ziak.jpg" artiste="ZIAK"> </card>
-  <card image="/img/luv.jpg" artiste="LUV RESVAL"> </card>
-  <card image="/img/disiz.jpg" artiste="DISIZ"> </card>
-  <card image="/img/lefa.jpg" artiste="LEFA"> </card>
-  <card image="/img/lujipeka.jpg" artiste="LUJIPEKA"> </card>
-  <card image="/img/capo.jpg" artiste="CAPO PLAZA"> </card>
-  <card image="/img/nahir.jpg" artiste="NAHIR"> </card>
-  <card image="/img/roshi.jpg" artiste="CAPTAINE ROSHI"> </card>
-  <card image="/img/coyott.jpg" artiste="COYOTT JO BASTARD"> </card>
-  <card image="/img/mojixsboy.jpg" artiste="MOJI X SBOY"> </card>
-  <card image="/img/bakari.jpg" artiste="BAKARI"> </card>
+  <RouterLink to="/Damso"><card image="/img/damso.jpg" artiste="DAMSO"> </card></RouterLink>
+  <RouterLink to="/Dinos"><card image="/img/dinos.jpg" artiste="DINOS"> </card></RouterLink>
+  <RouterLink to="/Sfera"><card image="/img/sfera.jpg" artiste="SFERA EBBASTA"> </card></RouterLink>
+  <RouterLink to="/Leto"><card image="/img/leto.jpg" artiste="LETO"> </card></RouterLink>
+  <RouterLink to="/Ziak"><card image="/img/ziak.jpg" artiste="ZIAK"> </card></RouterLink>
+  <RouterLink to="/Luv"><card image="/img/luv.jpg" artiste="LUV RESVAL"> </card></RouterLink>
+  <RouterLink to="/Disiz"><card image="/img/disiz.jpg" artiste="DISIZ"> </card></RouterLink>
+  <RouterLink to="/Lefa"><card image="/img/lefa.jpg" artiste="LEFA"> </card></RouterLink>
+  <RouterLink to="/Lujipeka"><card image="/img/lujipeka.jpg" artiste="LUJIPEKA"> </card></RouterLink>
+  <RouterLink to="/Capo"><card image="/img/capo.jpg" artiste="CAPO PLAZA"> </card></RouterLink>
+  <RouterLink to="/Nahir"><card image="/img/nahir.jpg" artiste="NAHIR"> </card></RouterLink>
+  <RouterLink to="/Roshi"><card image="/img/roshi.jpg" artiste="CAPTAINE ROSHI"> </card></RouterLink>
+  <RouterLink to="/Coyote"><card image="/img/coyott.jpg" artiste="COYOTE JO BASTARD"> </card></RouterLink>
+  <RouterLink to="/mojixsboy"><card image="/img/mojixsboy.jpg" artiste="MOJI X SBOY"> </card></RouterLink>
+  <RouterLink to="/Bakari"><card image="/img/bakari.jpg" artiste="BAKARI"> </card></RouterLink>
     </div>
 </template>
 

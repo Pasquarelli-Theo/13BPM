@@ -24,12 +24,24 @@
       <RouterLink to="/Dinos"
         ><card image="/img/dinos.jpg" artiste="DINOS"> </card
       ></RouterLink>
-      <card image="/img/ziak.jpg" artiste="ZIAK"> </card>
-      <card image="/img/disiz.jpg" artiste="DISIZ"> </card>
-      <card image="/img/lefa.jpg" artiste="LEFA"> </card>
-      <card image="/img/lujipeka.jpg" artiste="LUJIPEKA"> </card>
-      <card image="/img/roshi.jpg" artiste="CAPTAINE ROSHI"> </card>
-      <card image="/img/bakari.jpg" artiste="BAKARI"> </card>
+      <RouterLink to="/Ziak"
+        ><card image="/img/ziak.jpg" artiste="ZIAK"> </card
+      ></RouterLink>
+      <RouterLink to="/Disiz"
+        ><card image="/img/disiz.jpg" artiste="DISIZ"> </card
+      ></RouterLink>
+      <RouterLink to="/Lefa"
+        ><card image="/img/lefa.jpg" artiste="LEFA"> </card
+      ></RouterLink>
+      <RouterLink to="/Lujipeka"
+        ><card image="/img/lujipeka.jpg" artiste="LUJIPEKA"> </card
+      ></RouterLink>
+      <RouterLink to="/Roshi"
+        ><card image="/img/roshi.jpg" artiste="CAPTAINE ROSHI"> </card
+      ></RouterLink>
+      <RouterLink to="/Bakari"
+        ><card image="/img/bakari.jpg" artiste="BAKARI"> </card
+      ></RouterLink>
     </div>
   </div>
 </template>

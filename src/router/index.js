@@ -15,7 +15,17 @@ import Damso from "../views/Damso.vue";
 import Dinos from "../views/Dinos.vue";
 import Sfera from "../views/Sfera.vue";
 import Lefa from "../views/Lefa.vue";
-import Lefa from "../views/Lefa.vue";
+import Luv from "../views/Luv.vue";
+import Disiz from "../views/Disiz.vue";
+import Leto from "../views/Leto.vue";
+import Lujipeka from "../views/Lujipeka.vue";
+import Nahir from "../views/Nahir.vue";
+import Ziak from "../views/Ziak.vue";
+import Roshi from "../views/Roshi.vue";
+import Capo from "../views/Capo.vue";
+import Coyote from "../views/Coyote.vue";
+import mojixsboy from "../views/mojixsboy.vue";
+import Bakari from "../views/Bakari.vue";
 import MentionsLegales from"../views/MentionsLegales.vue";
 import Contact from "../views/Contact.vue";
 import Page404 from "../views/Page404.vue";
@@ -47,6 +57,17 @@ const router = createRouter({
     { path: "/Dinos", name: "Dinos", component: Dinos },
     { path: "/Sfera", name: "Sfera", component: Sfera },
     { path: "/Lefa", name: "Lefa", component: Lefa },
+    { path: "/Luv", name: "Luv", component: Luv },
+    { path: "/Disiz", name: "Disiz", component: Disiz },
+    { path: "/Leto", name: "Leto", component: Leto },
+    { path: "/Lujipeka", name: "Lujipeka", component: Lujipeka },
+    { path: "/Nahir", name: "Nahir", component: Nahir },
+    { path: "/Ziak", name: "Ziak", component: Ziak },
+    { path: "/Roshi", name: "Roshi", component: Roshi },
+    { path: "/Capo", name: "Capo", component: Capo },
+    { path: "/Coyote", name: "Coyote", component: Coyote },
+    { path: "/mojixsboy", name: "mojixsboy", component: mojixsboy },
+    { path: "/Bakari", name: "Bakari", component: Bakari },
     {
       path: "/MentionsLegales",
       name: "MentionsLegales",

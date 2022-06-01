@@ -24,12 +24,24 @@
       <RouterLink to="/Sfera"
         ><card image="/img/sfera.jpg" artiste="SFERA EBBASTA"> </card
       ></RouterLink>
-      <card image="/img/leto.jpg" artiste="LETO"> </card>
-      <card image="/img/luv.jpg" artiste="LUV RESVAL"> </card>
-      <card image="/img/capo.jpg" artiste="CAPO PLAZA"> </card>
-      <card image="/img/nahir.jpg" artiste="NAHIR"> </card>
-      <card image="/img/coyott.jpg" artiste="COYOTE JO BASTARD"> </card>
-      <card image="/img/mojixsboy.jpg" artiste="MOJI X SBOY"> </card>
+      <RouterLink to="/Leto"
+        ><card image="/img/leto.jpg" artiste="LETO"> </card
+      ></RouterLink>
+      <RouterLink to="/Luv"
+        ><card image="/img/luv.jpg" artiste="LUV RESVAL"> </card
+      ></RouterLink>
+      <RouterLink to="/Capo"
+        ><card image="/img/capo.jpg" artiste="CAPO PLAZA"> </card
+      ></RouterLink>
+      <RouterLink to="/Nahir"
+        ><card image="/img/nahir.jpg" artiste="NAHIR"> </card
+      ></RouterLink>
+      <RouterLink to="/Coyote"
+        ><card image="/img/coyott.jpg" artiste="COYOTE JO BASTARD"> </card
+      ></RouterLink>
+      <RouterLink to="/mojixsboy"
+        ><card image="/img/mojixsboy.jpg" artiste="MOJI X SBOY"> </card
+      ></RouterLink>
     </div>
   </div>
 </template>
