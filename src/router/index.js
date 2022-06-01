@@ -18,7 +18,7 @@ import Page404 from "../views/Page404.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: "/", name: "Home", component: Home },
+    { path: "/Home", name: "Home", component: Home },
     { path: "/Programmation", name: "Programmation", component: Programmation },
     {
       path: "/ProgrammationJ1",

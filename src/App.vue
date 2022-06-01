@@ -3,7 +3,7 @@
     <header class="sticky top-0 z-40 h-16 w-full bg-white px-3">
       <div class="flex h-full w-full items-center justify-between">
         <div class="flex items-center">
-          <RouterLink to="/">
+          <RouterLink to="/Home">
             <div class="w-40">
               <img src="../public/icones/Logo.webp" alt="Logo Tafari" />
             </div>
@@ -36,7 +36,7 @@
     <RouterView />
     <footer class="mt-8 bg-red-100 text-white">
       <div class="flex place-content-center p-10">
-        <RouterLink to="/">
+        <RouterLink to="/Home">
           <img src="../public/icones/Logo_blanc.png" alt="Logo 13BPM"
         /></RouterLink>
       </div>
