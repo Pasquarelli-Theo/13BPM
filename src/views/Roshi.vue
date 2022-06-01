@@ -2,39 +2,41 @@
   <div>
     <img
       class="w-full"
-      src="../../public/img/Ziak_artiste.jpg"
-      alt="image du rappeur Ziak"
+      src="../../public/img/roshi_artiste.jpg"
+      alt="image du rappeur Captaine Roshi"
     />
     <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
-      Ziak est un rappeur français extrêmement mystérieux, en effet nous ne
-      connaissons rien de lui. Le rappeur au bandanna a posté ses premiers clips
-      sur Youtube en 2020 et il y a directement montré son univers sombre,
-      agressif et menaçant. Après avoir sorti quelques single, Ziak a dévoilé
-      son premier album Akimbo en 2021 et réalise le dixième meilleur démarrage
-      de 2021 pour un album de rap français avec 18 766 exemplaires en une
-      semaine.
+      Captaine Roshi a grandi au Congo avant de débarquer en France à l’âge de
+      11 ans pour suivre sa mère et son frère malade. Trimballé d’hôtel en hôtel
+      il s’évade de sa chambre en se construisant un monde imaginaire érigé
+      autour des jeux vidéo et des mangas. Rapidement le rap deviendra une
+      troisième alternative.<br />
+      <br />Captaine Roshi a un style très identifiable de par sa voix cassé,
+      ses flow et ses gimmicks uniques parfois inspirés de la pop culture. Des
+      gimmicks qui contrastent avec les paroles crus et les prods traps de ses
+      titres.
     </p>
     <div class="flex place-content-center">
-      <a href="https://www.facebook.com/Ziakimbo/" target="_blank"
+      <a href="https://www.facebook.com/CaptaineRoshi9/" target="_blank"
         ><img
           src="../../public/icones/facebook.png"
           alt="logo facebook"
           class="w-12"
       /></a>
-      <a href="https://www.instagram.com/ziakimbo/?hl=fr" target="_blank"
+      <a href="https://www.instagram.com/captaine.roshi/?hl=fr" target="_blank"
         ><img
           src="../../public/icones/instagram.png"
           alt="logo instagram"
           class="ml-5 mt-2 w-8"
       /></a>
-      <a href="https://twitter.com/ZiakimboCC" target="_blank"
+      <a href="https://twitter.com/captaineroshi" target="_blank"
         ><img
           src="../../public/icones/twitter.png"
           alt="logo twitter"
           class="ml-5 mt-2 w-8"
       /></a>
       <a
-        href="https://www.youtube.com/c/ZiakCC"
+        href="https://www.youtube.com/channel/UCFBYWlRe1XabmimvGhG3IFA"
         target="_blank"
         ><img
           src="../../public/icones/youtube.png"
@@ -44,11 +46,11 @@
     </div>
     <div class="ml-28 flex">
       <ClockIcon class="w-8" />
-      <p class="ml-2 font-viga">Grande scène</p>
+      <p class="ml-2 font-viga">Petite scène</p>
     </div>
     <div class="ml-28 flex">
       <LocationMarkerIcon class="w-8" />
-      <p class="ml-2 font-viga">Jour 2 - 20h00</p>
+      <p class="ml-2 font-viga">Jour 2 - 21h30</p>
     </div>
   </div>
 </template>
