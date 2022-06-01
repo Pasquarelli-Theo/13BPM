@@ -3,7 +3,7 @@
     <header class="sticky top-0 z-40 h-16 w-full bg-white px-3">
       <div class="flex h-full w-full items-center justify-between">
         <div class="flex items-center">
-          <RouterLink to="/Home">
+          <RouterLink to="/">
             <div class="w-40">
               <img src="../public/icones/Logo.webp" alt="Logo Tafari" />
             </div>
