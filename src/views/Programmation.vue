@@ -1,15 +1,19 @@
 <template>
   <div class="container dark:text-white">
-    <div class="card-header">
-      <h5>Liste des catégories</h5>
+    <div class="card-header m-3">
+      <h2
+        class="ml-1 mb-6 mt-10 w-80 -rotate-6 bg-black font-archivo-black text-xl text-white"
+      >
+        Liste des artistes
+      </h2>
     </div>
     <hr />
 
     <form>
-      <h6>Nouvelle catégorie</h6>
-      <div class="input-group">
+      <h3 class="m-3 font-bold dark:bg-grey dark:text-white">Nouvel artiste</h3>
+      <div class="input-group m-3">
         <div class="input-group-prepend">
-          <span class="input-group-text">Libellé</span>
+          <span class="input-group-text"></span>
         </div>
         <input type="text" class="form-control" v-model="nom" required />
         <button
@@ -28,10 +32,10 @@
         <thead>
           <tr>
             <th scope="col">
-              <div class="float-left">Liste des catégories actuelles</div>
-              <span class="float-right">
+              <div class="float-left ml-3 mt-3">Liste des artistes actuels</div>
+              <span>
                 <div class="input-group">
-                  <div class="input-group-prepend">
+                  <div class="input-group-prepend m-3">
                     <span class="input-group-text">Filtrage</span>
                   </div>
                   <input type="text" class="form-control" v-model="filter" />
@@ -47,18 +51,23 @@
           <tr v-for="artiste in filterByNom" :key="artiste.id">
             <td>
               <form>
-                <div class="input-group">
+                <div class="grid grid-flow-row-dense sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 input-group m-3">
                   <div class="input-group-prepend">
-                    <span class="input-group-text">Libellé</span>
+                    <span class="input-group-text"></span>
                   </div>
+                <div>
+                  <img
+                    :src="artiste.image"
+                    alt="Photo de l'artiste"
+                    class="w-1/2 object-cover h-48 rounded-t-lg"
+                  />
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control w-1/2 rounded-b-lg bg-red-100 font-homenaje text-3xl uppercase text-white"
                     v-model="artiste.nom"
                     required
                   />
 
-                  <img :src="artiste.image" alt="" />
                   <button
                     class="btn btn-light"
                     type="submit"
@@ -75,6 +84,7 @@
                   >
                     delete
                   </button>
+                  </div>
                 </div>
               </form>
             </td>
