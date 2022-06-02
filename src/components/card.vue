@@ -14,7 +14,7 @@
       <section class="w-full">
         <div class="w-full text-center">
           <h3 class="font-homenaje text-3xl text-white">{{ artiste }}</h3>
-          <hr class="mb-4 ml-6 mr-6 border-indigo-100" />
+          <hr class="mb-4 ml-6 mr-6 border-white" />
         </div>
       </section>
     </figcaption>

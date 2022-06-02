@@ -14,7 +14,7 @@
       <section class="w-full">
         <div class="w-full text-center">
           <h3 class="font-homenaje text-3xl text-white">{{ artiste }}</h3>
-          <hr class="mb-2 ml-6 mr-6 border-indigo-100" />
+          <hr class="mb-2 ml-6 mr-6 border-white" />
           <p class="font-work-sans text-s text-white">{{ jour }}</p>          
           <p class="font-work-sans mb-3 text-s text-white">{{ heure }}</p>
         </div>
