@@ -1,7 +1,7 @@
 <template>
-  <h1 class="m-5 text-center font-viga text-3xl">Error 404</h1>
+  <h1 class="m-5 dark:text-white   text-center font-viga text-3xl">Error 404</h1>
   <div
-    class="grid grid-flow-row-dense grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
+    class="grid dark:text-white grid-flow-row-dense grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
   >
     <div class="flex place-content-center">
       <img src="../../public/img/404.png" class="mb-0 h-2/3 w-auto" />

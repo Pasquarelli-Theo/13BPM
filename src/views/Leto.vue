@@ -38,11 +38,11 @@
           class="ml-5 w-12"
       /></a>
     </div>
-    <div class="ml-28 flex">
+    <div class="ml-28 dark:text-white flex">
       <ClockIcon class="w-8" />
       <p class="ml-2 font-viga">Petite scène</p>
     </div>
-    <div class="ml-28 flex">
+    <div class="ml-28 dark:text-white flex">
       <LocationMarkerIcon class="w-8" />
       <p class="ml-2 font-viga">Jour 2 - 19h00</p>
     </div>
