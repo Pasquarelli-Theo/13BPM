@@ -5,7 +5,7 @@
       src="../../public/img/nahir_artiste.jpg"
       alt="image du rappeur Nahir"
     />
-    <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
+    <p class="mt-8 ml-5 mr-5 bg-white dark:text-white dark:bg-grey p-2 font-work-sans font-bold">
       Rappeur français d’origine algérienne et congolaise, Nahir vient de
       Bobigny en Seine Saint Denis. Il découvre le rap à neuf ans grâce aux
       grands du quartier et fonde un groupe à seulement 11 ans. En 2018 il

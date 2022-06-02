@@ -5,7 +5,7 @@
       src="../../public/img/lujipeka_artiste.jpg"
       alt="image du rappeur Lujipeka"
     />
-    <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
+    <p class="mt-8 ml-5 mr-5 bg-white dark:text-white dark:bg-grey p-2 font-work-sans font-bold">
       Lujipeka, de son vrai nom Lucas Taupin, est né et a grandi à Rennes, en
       Bretagne et découvre le rap grâce à Booba et son single Pitbull. Luji
       commence dès 14 ans à composer des instru et c’est aulycée qu’il rencontre

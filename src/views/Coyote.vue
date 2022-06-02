@@ -5,7 +5,7 @@
       src="../../public/img/coyote_artiste.jpg"
       alt="image du rappeur Coyote Jo Bastard"
     />
-    <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
+    <p class="mt-8 ml-5 mr-5 bg-white dark:text-white dark:bg-grey p-2 font-work-sans font-bold">
       Coyote Jo Bastard, de son vrai prénom Jonathan, est un rappeur français
       originaire de Paris dans le 17ème. S’il commence à se faire une place au
       sein du rap game français, il a également un sacré pied dans le milieu

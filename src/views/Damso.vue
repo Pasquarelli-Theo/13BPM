@@ -5,7 +5,7 @@
       src="../../public/img/damso_artiste.jpg"
       alt="image du rappeur Damso"
     />
-    <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
+    <p class="mt-8 ml-5 mr-5 bg-white dark:text-white dark:bg-grey p-2 font-work-sans font-bold">
       Né le 10 mai 1992 à Kinshasa, William Kalumbi A.K.A Damso est un
       rappeur-beatmaker belgo-congolais. Ses parents ont fui la République
       démocratique du Congo en conflit armé et s’installent à Bruxelles quand il

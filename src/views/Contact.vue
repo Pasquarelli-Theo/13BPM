@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="dark:text-white">
     <h2
       class="ml-1 mb-6 mt-10 w-80 -rotate-6 bg-black font-archivo-black text-xl text-white"
     >
@@ -22,26 +22,26 @@
     </p>
     <div class="ml-auto mr-auto grid w-3/5">
       <form action="" class="grid-cols-1">
-        <div class=" flex items-start rounded-md bg-white">
+        <div class=" flex items-start rounded-md bg-white dark:bg-grey">
           <UserIcon class="h-6 mr-2" /><input
             type="text"
             placeholder="Nom"
-            class="text-gray-500 mt-1 w-full rounded-md bg-white text-justify text-sm"
+            class="text-gray-500 mt-1 w-full rounded-md bg-white dark:bg-grey text-justify text-sm"
           />
         </div>
 
-        <div class="mt-4 flex items-start rounded-md bg-white">
+        <div class="mt-4 flex items-start rounded-md bg-white dark:bg-grey">
           <PencilIcon class="h-6 mr-2" /><input
             type="text"
             placeholder="Email"
-            class="text-gray-500 mt- w-full rounded-md bg-white text-justify text-sm"
+            class="text-gray-500 mt- w-full rounded-md bg-white dark:bg-grey text-justify text-sm"
           />
         </div>
 
-        <div class="mt-4 flex items-start rounded-md bg-white">
+        <div class="mt-4 flex items-start rounded-md bg-white dark:bg-grey">
           <MailIcon class="h-6 mr-2" /><textarea
             name="message"
-            class="font-open-sans block w-full rounded-md text-sm focus:outline-none"
+            class="font-open-sans block w-full dark:bg-grey rounded-md text-sm focus:outline-none"
             rows="3"
             placeholder="Message"
             required

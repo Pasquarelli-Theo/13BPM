@@ -5,7 +5,7 @@
       src="../../public/img/disiz_artiste.jpg"
       alt="image du rappeur Disiz"
     />
-    <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
+    <p class="mt-8 ml-5 mr-5 bg-white dark:text-white dark:bg-grey p-2 font-work-sans font-bold">
       Disiz ou Disiz la Peste, de son vrai nom Sérigne M'Baye Gueye, né le 22
       mars 1978 à Amiens est un rappeur, écrivain et comédien français. Il
       publie son premier album Le Poisson rouge, le 23 octobre 2000, qui

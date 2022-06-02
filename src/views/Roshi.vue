@@ -5,7 +5,7 @@
       src="../../public/img/roshi_artiste.jpg"
       alt="image du rappeur Captaine Roshi"
     />
-    <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
+    <p class="mt-8 ml-5 mr-5 bg-white dark:text-white dark:bg-grey p-2 font-work-sans font-bold">
       Captaine Roshi a grandi au Congo avant de débarquer en France à l’âge de
       11 ans pour suivre sa mère et son frère malade. Trimballé d’hôtel en hôtel
       il s’évade de sa chambre en se construisant un monde imaginaire érigé

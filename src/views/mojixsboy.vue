@@ -5,7 +5,7 @@
       src="../../public/img/mojixsboy_artiste.jpg"
       alt="image des rappeurs Moji x Sboy"
     />
-    <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
+    <p class="mt-8 ml-5 mr-5 bg-white dark:text-white dark:bg-grey p-2 font-work-sans font-bold">
       Moji et Sboy sont deux amis d’enfance qui ont grandi ensemble à Liège en
       Belgique. Il se lance dans le rap en formant un duo et post fin 2018,
       alors à peine majeurs, leur tout premier freestyle. Très inspiré par le

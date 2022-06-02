@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-light_grey">
+  <div class="bg-light_grey dark:bg-dark_grey">
     <header class="sticky top-0 z-40 h-16 w-full bg-white px-3">
       <div class="flex h-full w-full items-center justify-between">
         <div class="flex items-center">
@@ -21,12 +21,9 @@
             @click="MenuOpen = !MenuOpen"
           />
           <ul
-            class="mt-32 ml-20 flex flex-col gap-8 py-4 font-bold uppercase text-white md:text-black lg:flex-row lg:text-black"
+            class="mt-32 ml-20 flex flex-col gap-8 py-4 font-archivo-black uppercase text-white md:text-black lg:flex-row lg:text-black"
           >
-            <RouterLink
-              to="/"
-              class="lg:hidden"
-              @click="MenuOpen = !MenuOpen"
+            <RouterLink to="/" class="lg:hidden" @click="MenuOpen = !MenuOpen"
               >accueil</RouterLink
             >
             <RouterLink to="/Programmation" @click="MenuOpen = !MenuOpen"

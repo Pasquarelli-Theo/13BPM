@@ -1,89 +1,202 @@
 <template>
-  <div>
-    <h2
-      class="ml-1 mb-6 mt-10 w-80 -rotate-6 bg-black font-archivo-black text-xl text-white"
-    >
-      PROGRAMMATION
-    </h2>
-    <div
-      class="grid grid-flow-row-dense grid-cols-3 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10"
-    >
-      <bouton class="w-24" texte="TOUS"></bouton>
-      <RouterLink to="/ProgrammationJ1"
-        ><bouton class="w-24" texte="JOUR 1"></bouton
-      ></RouterLink>
-      <RouterLink to="/ProgrammationJ2"
-        ><bouton class="w-24" texte="JOUR 2"></bouton
-      ></RouterLink>
+  <div class="container dark:text-white">
+    <div class="card-header">
+      <h5>Liste des catégories</h5>
     </div>
-    <div
-      class="grid grid-flow-row-dense sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
-    >
-      <RouterLink to="/sch"
-        ><card image="/img/sch.jpg" artiste="SCH"> </card
-      ></RouterLink>
-      <RouterLink to="/Damso"
-        ><card image="/img/damso.jpg" artiste="DAMSO"> </card
-      ></RouterLink>
-      <RouterLink to="/Dinos"
-        ><card image="/img/dinos.jpg" artiste="DINOS"> </card
-      ></RouterLink>
-      <RouterLink to="/Sfera"
-        ><card image="/img/sfera.jpg" artiste="SFERA EBBASTA"> </card
-      ></RouterLink>
-      <RouterLink to="/Leto"
-        ><card image="/img/leto.jpg" artiste="LETO"> </card
-      ></RouterLink>
-      <RouterLink to="/Ziak"
-        ><card image="/img/ziak.jpg" artiste="ZIAK"> </card
-      ></RouterLink>
-      <RouterLink to="/Luv"
-        ><card image="/img/luv.jpg" artiste="LUV RESVAL"> </card
-      ></RouterLink>
-      <RouterLink to="/Disiz"
-        ><card image="/img/disiz.jpg" artiste="DISIZ"> </card
-      ></RouterLink>
-      <RouterLink to="/Lefa"
-        ><card image="/img/lefa.jpg" artiste="LEFA"> </card
-      ></RouterLink>
-      <RouterLink to="/Lujipeka"
-        ><card image="/img/lujipeka.jpg" artiste="LUJIPEKA"> </card
-      ></RouterLink>
-      <RouterLink to="/Capo"
-        ><card image="/img/capo.jpg" artiste="CAPO PLAZA"> </card
-      ></RouterLink>
-      <RouterLink to="/Nahir"
-        ><card image="/img/nahir.jpg" artiste="NAHIR"> </card
-      ></RouterLink>
-      <RouterLink to="/Roshi"
-        ><card image="/img/roshi.jpg" artiste="CAPTAINE ROSHI"> </card
-      ></RouterLink>
-      <RouterLink to="/Coyote"
-        ><card image="/img/coyott.jpg" artiste="COYOTE JO BASTARD"> </card
-      ></RouterLink>
-      <RouterLink to="/mojixsboy"
-        ><card image="/img/mojixsboy.jpg" artiste="MOJI X SBOY"> </card
-      ></RouterLink>
-      <RouterLink to="/Bakari"
-        ><card image="/img/bakari.jpg" artiste="BAKARI"> </card
-      ></RouterLink>
+    <hr />
+
+    <form>
+      <h6>Nouvelle catégorie</h6>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Libellé</span>
+        </div>
+        <input type="text" class="form-control" v-model="nom" required />
+        <button
+          class="btn btn-light"
+          type="button"
+          @click="createArtiste()"
+          title="Création"
+        >
+          Ajouter
+        </button>
+      </div>
+    </form>
+
+    <div class="card-body table-responsive">
+      <table class="text-light table">
+        <thead>
+          <tr>
+            <th scope="col">
+              <div class="float-left">Liste des catégories actuelles</div>
+              <span class="float-right">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Filtrage</span>
+                  </div>
+                  <input type="text" class="form-control" v-model="filter" />
+                  <button class="btn btn-light" type="button" title="Filtrage">
+                    Recherche
+                  </button>
+                </div>
+              </span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="artiste in filterByNom" :key="artiste.id">
+            <td>
+              <form>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Libellé</span>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    v-model="artiste.nom"
+                    required
+                  />
+
+                  <img :src="artiste.image" alt="" />
+                  <button
+                    class="btn btn-light"
+                    type="submit"
+                    @click.prevent="updateArtiste(artiste)"
+                    title="Modification"
+                  >
+                    <i class="fa fa-save fa-lg"></i>
+                  </button>
+                  <button
+                    class="btn btn-light"
+                    type="submit"
+                    @click.prevent="deleteArtiste(artiste)"
+                    title="Suppression"
+                  >
+                    delete
+                  </button>
+                </div>
+              </form>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </template>
 
 <script>
-import card from "../components/card.vue";
-import bouton from "../components/bouton.vue";
+import {
+  getFirestore,
+  collection,
+  doc,
+  getDocs,
+  addDoc,
+  updateDoc,
+  deleteDoc,
+  onSnapshot,
+} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
+
+import {
+  getStorage, // Obtenir le Cloud Storage
+  ref, // Pour créer une référence à un fichier à uploader
+  getDownloadURL, // Permet de récupérer l'adress complète d'un fichier du Storage
+  uploadString, // Permet d'uploader sur le Cloud Storage une image en Base64
+} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js";
 
 export default {
-  name: "App",
-  components: {
-    card,
-    bouton,
+  name: "ListeView",
+  data() {
+    return {
+      nom: null, // Pour la création d'une catégorie
+      listeArtisteSynchro: [],
+      filter: "",
+    };
   },
 
-  data() {
-    return {};
+  computed: {
+    //Tri des catégories par ordre alpha
+    orderByNom: function () {
+      return this.listeArtisteSynchro.sort(function (a, b) {
+        if (a.nom < b.nom) return -1;
+        if (a.nom > b.nom) return 1;
+        return 0;
+      });
+    },
+
+    filterByNom: function () {
+      if (this.filter.length > 0) {
+        let filter = this.filter.toLowerCase();
+        return this.orderByNom.filter(function (artiste) {
+          return artiste.nom.toLowerCase().includes(filter);
+        });
+      } else {
+        return this.orderByNom;
+      }
+    },
+  },
+
+  mounted() {
+    this.getArtisteSynchro();
+  },
+  methods: {
+    async getArtisteSynchro() {
+      // Obtenir Firestore
+      const firestore = getFirestore();
+      // Base de données (collection)  document pays
+      const dbArtiste = collection(firestore, "artiste");
+      // Liste des pays synchronisée
+      const query = await onSnapshot(dbArtiste, (snapshot) => {
+        //  Récupération des résultats dans listePaysSynchro
+        // On utilse map pour récupérer l'intégralité des données renvoyées
+        // on identifie clairement le id du document
+        // les rest parameters permet de préciser la récupération de toute la partie data
+        this.listeArtisteSynchro = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+
+        this.listeArtisteSynchro.forEach(function (artiste) {
+          const storage = getStorage();
+          const spaceRef = ref(storage, "image/" + artiste.image);
+          getDownloadURL(spaceRef)
+            .then((url) => {
+              artiste.image = url;
+              console.log("artiste", artiste);
+            })
+            .catch((error) => {
+              console.log("erreur downloadUrl", error);
+            });
+        });
+      });
+    },
+
+    async createArtiste() {
+      const firestore = getFirestore();
+      const dbArtiste = collection(firestore, "artiste");
+      const docRef = await addDoc(dbArtiste, {
+        nom: this.nom,
+        image: this.image,
+      });
+      console.log("document crée avec le id : ", docRef.id);
+    },
+
+    async updateArtiste(artiste) {
+      const firestore = getFirestore();
+      const docRef = doc(firestore, "artiste", artiste.id);
+      await updateDoc(docRef, {
+        nom: artiste.nom,
+        image: artiste.image,
+      });
+    },
+
+    async deleteArtiste(artiste) {
+      const firestore = getFirestore();
+      const docRef = doc(firestore, "artiste", artiste.id);
+      await deleteDoc(docRef);
+    },
   },
 };
 </script>
+
+<style scoped></style>

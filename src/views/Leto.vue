@@ -5,7 +5,7 @@
       src="../../public/img/leto_artiste.jpg"
       alt="image du rappeur Leto"
     />
-    <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
+    <p class="mt-8 ml-5 mr-5 bg-white dark:text-white dark:bg-grey p-2 font-work-sans font-bold">
       De son vrai nom Henoc Pierrick Bofenda, Leto est un artiste-rappeur
       français très connu aujourd’hui dans l’industrie du rap français. Grâce au
       groupe PSO Thug, qu’il a fondé avec son autre compère Aéro, il s’est

@@ -5,7 +5,7 @@
       src="../../public/img/dinos_artiste.jpg"
       alt="image du rappeur Dinos"
     />
-    <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
+    <p class="mt-8 ml-5 mr-5 bg-white dark:text-white dark:bg-grey p-2 font-work-sans font-bold">
       Dinos, de son vrai nom Jules Jomby, né à Douala capitale économique du
       Cameroun, quitte son pays natale pour la France à l’âge de 4 ans, il passe
       son enfance au quartier des “4 000” à La Courneuve. En parallèle du succès

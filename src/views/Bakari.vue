@@ -5,7 +5,7 @@
       src="../../public/img/bakari_artiste.jpg"
       alt="image du rappeur Bakari"
     />
-    <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
+    <p class="mt-8 ml-5 mr-5 dark:text-white dark:bg-grey bg-white p-2 font-work-sans font-bold">
       Né durant l’année 1996 au Congo Bakari est arrivé en Belgique à l’âge de 7
       ans, il est tout de suite baigné dans la musique grâce à ses parents qui
       laissent tourner les CD de Bob Marley et Koffi Olomidé. C’est à l’âge de

@@ -5,7 +5,7 @@
       src="../../public/img/luv_artiste.jpg"
       alt="image du rappeur Luv Resval"
     />
-    <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
+    <p class="mt-8 ml-5 mr-5 bg-white dark:text-white dark:bg-grey p-2 font-work-sans font-bold">
       Luv Resval est né le 6 janvier 1998 et a grandit dans l’Essonne. Très
       jeune, il se met au rap avec des séries de freestyles sur YouTube. Le 1er
       décembre, il entame la série de freestyles ¥. Il fait une démonstration de

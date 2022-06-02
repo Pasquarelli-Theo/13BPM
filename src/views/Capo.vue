@@ -5,7 +5,7 @@
       src="../../public/img/capo_artiste.jpg"
       alt="image du rappeur Capo Plaza"
     />
-    <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
+    <p class="mt-8 ml-5 mr-5 dark:text-white dark:bg-grey bg-white p-2 font-work-sans font-bold">
       Capo Plaza, de son vrai nom Luca D'Orso, né le 20 avril 1998 à Salerne en
       Campanie, est un rappeur italien. Il écrit ses premiers textes en 2011 à
       13 ans, il crée sa chaîne Youtube en 2013 pour y poster ses clips sous le
