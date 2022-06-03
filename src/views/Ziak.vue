@@ -2,7 +2,7 @@
   <div>
     <img
       class="w-full"
-      src="public/img/Ziak_artiste.jpg"
+      src="img/Ziak_artiste.jpg"
       
       alt="image du rappeur Ziak"
     />
