@@ -48,7 +48,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="artiste in filterByNom" :key="artiste.id">
+          <tr>
             <td>
               <form>
                 <div class="input-group m-3">
@@ -67,10 +67,10 @@
                           alt="imgalt"
                         />
                         <div
-                          class=" w-72 items-center justify-center rounded-t-lg text-center"
+                          class="w-72 items-center justify-center rounded-t-lg text-center"
                         >
                           <h3
-                            class=" object-cover rounded-b-lg bg-red-100 font-homenaje text-3xl uppercase text-white"
+                            class="rounded-b-lg bg-red-100 object-cover font-homenaje text-3xl uppercase text-white"
                           >
                             {{ g.nom }}
                           </h3>
