@@ -7,9 +7,8 @@
         LES ARTISTES
       </h2>
     </div>
-    <hr />
 
-<form>
+    <form>
       <h3 class="m-3 font-bold dark:bg-grey dark:text-white">Nouvel artiste</h3>
       <div class="input-group m-3">
         <div class="input-group-prepend">
@@ -17,7 +16,7 @@
         </div>
         <input type="text" class="form-control" v-model="nom" required />
         <button
-          class="btn btn-light"
+          class="btn btn-light rounded-sm bg-black text-white"
           type="button"
           @click="createArtiste()"
           title="Création"
@@ -39,7 +38,11 @@
                     <span class="input-group-text">Filtrage</span>
                   </div>
                   <input type="text" class="form-control" v-model="filter" />
-                  <button class="btn btn-light" type="button" title="Filtrage">
+                  <button
+                    class="btn btn-light rounded-sm bg-black text-white"
+                    type="button"
+                    title="Filtrage"
+                  >
                     Recherche
                   </button>
                 </div>
@@ -48,32 +51,38 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="artiste in filterByNom" :key="artiste.id">
+          <tr>
             <td>
               <form>
                 <div class="input-group m-3">
-                  <input
-                    type="text"
-                    class="form-control w-3/4 text-center rounded-lg bg-red-100 font-homenaje text-3xl uppercase text-white"
-                    v-model="artiste.nom"
-                    required
-                  />
-                  <button
-                    class="btn btn-light"
-                    type="submit"
-                    @click.prevent="updateArtiste(artiste)"
-                    title="Modification"
+                  <div
+                    class="mx-auto grid max-w-5xl grid-flow-row-dense gap-7 sm:grid-cols-[repeat(auto-fit,minmax(22rem,auto))] lg:grid-cols-[repeat(auto-fit,minmax(15rem,auto))]"
                   >
-                    <i class="fa fa-save fa-lg"></i>
-                  </button>
-                  <button
-                    class="btn btn-light"
-                    type="submit"
-                    @click.prevent="deleteArtiste(artiste)"
-                    title="Suppression"
-                  >
-                    delete
-                  </button>
+                    <div v-for="artiste in filterByNom" :key="artiste.id">
+                      <input
+                        type="text"
+                        class="form-control w-3/4 rounded-lg bg-red-100 text-center font-homenaje text-3xl uppercase text-white"
+                        v-model="artiste.nom"
+                        required
+                      />
+                      <button
+                        class="btn btn-light"
+                        type="submit"
+                        @click.prevent="updateArtiste(artiste)"
+                        title="Modification"
+                      >
+                        <i class="fa fa-save fa-lg"></i>
+                      </button>
+                      <button
+                        class="btn btn-light focus:shadow-outline m-1 h-7 rounded-xl border-2 border-black bg-white px-5 font-homenaje text-lg text-black transition-colors duration-150 hover:bg-red-700 hover:text-white"
+                        type="submit"
+                        @click.prevent="deleteArtiste(artiste)"
+                        title="Suppression"
+                      >
+                        delete
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </form>
             </td>

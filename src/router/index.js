@@ -29,6 +29,8 @@ import Bakari from "../views/Bakari.vue";
 import MentionsLegales from"../views/MentionsLegales.vue";
 import Contact from "../views/Contact.vue";
 import Page404 from "../views/Page404.vue";
+import compte from "../views/commte.vue";
+import chat from "../views/chat.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -75,6 +77,8 @@ const router = createRouter({
     },
     { path: "/Contact", name: "Contact", component: Contact },
     { path: "/:pathMatch(.*)*", name: "Page404", component: Page404 },
+    { path: "/compte", name: "compte", component: compte },
+    { path: "/chat", name: "chat", component: chat },
   ],
 });
 
