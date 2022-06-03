@@ -2,8 +2,7 @@
   <div>
     <img
       class="w-full"
-      src="img/Ziak_artiste.jpg"
-      
+      src="/img/ziak_artiste.jpg"
       alt="image du rappeur Ziak"
     />
     <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
@@ -34,20 +33,18 @@
           alt="logo twitter"
           class="ml-5 mt-2 w-8"
       /></a>
-      <a
-        href="https://www.youtube.com/c/ZiakCC"
-        target="_blank"
+      <a href="https://www.youtube.com/c/ZiakCC" target="_blank"
         ><img
           src="../../public/icones/youtube.png"
           alt="logo youtube"
           class="ml-5 w-12"
       /></a>
     </div>
-    <div class="ml-28 dark:text-white flex">
+    <div class="ml-28 flex dark:text-white">
       <ClockIcon class="w-8" />
       <p class="ml-2 font-viga">Grande scène</p>
     </div>
-    <div class="ml-28 dark:text-white flex">
+    <div class="ml-28 flex dark:text-white">
       <LocationMarkerIcon class="w-8" />
       <p class="ml-2 font-viga">Jour 2 - 20h00</p>
     </div>
