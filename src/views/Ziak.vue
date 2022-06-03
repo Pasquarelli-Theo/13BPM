@@ -2,7 +2,8 @@
   <div>
     <img
       class="w-full"
-      src="../public/img/Ziak_artiste.jpg"
+      src="public/img/Ziak_artiste.jpg"
+      
       alt="image du rappeur Ziak"
     />
     <p class="mt-8 ml-5 mr-5 bg-white p-2 font-work-sans font-bold">
