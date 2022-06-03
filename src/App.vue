@@ -2,18 +2,35 @@
   <div class="bg-light_grey dark:bg-dark_grey">
     <header class="sticky top-0 z-40 h-16 w-full bg-white px-3">
       <div class="flex h-full w-full items-center justify-between">
-        <div class="flex items-center">
+        <div class="grid">
+          <span v-if="avatar != null" class="mr-3">
+            <img class="avatar h-10 w-auto" :src="avatar" />
+            <RouterLink to="/" class="text-xs">{{ name }}</RouterLink>
+          </span>
+        </div>
+        <div v-if="avatar != null" class="w-40">
           <RouterLink to="/">
-            <div class="w-40">
-              <img src="../public/icones/Logo.webp" alt="Logo Tafari" />
-            </div>
+            <img
+              src="../public/icones/Logo.webp"
+              alt="Logo Tafari"
+              class="hidden"
+            />
+          </RouterLink>
+        </div>
+        <div v-else class="w-40">
+          <RouterLink to="/">
+            <img src="../public/icones/Logo.webp" alt="Logo 13BPM" />
           </RouterLink>
         </div>
         <div class="lg:hidden">
-          <MenuIcon class="w-8 cursor-pointer" @click="MenuOpen = !MenuOpen" />
+          <MenuIcon
+            class="text-blanc w-8 cursor-pointer"
+            @click="MenuOpen = !MenuOpen"
+          />
         </div>
+
         <nav
-          class="absolute left-0 top-0 h-screen w-full -translate-y-[200%] bg-red-100 pl-2 text-lg lg:relative lg:-top-16 lg:h-min lg:w-fit lg:translate-y-0 lg:bg-transparent"
+          class="absolute left-0 top-0  h-screen w-full -translate-y-[200%] bg-red-100 pl-2 text-lg lg:relative lg:-top-16 lg:h-min lg:w-fit lg:translate-y-0 lg:bg-transparent"
           :class="MenuOpen && 'translate-y-0'"
         >
           <XIcon
@@ -21,9 +38,9 @@
             @click="MenuOpen = !MenuOpen"
           />
           <ul
-            class="mt-32 ml-20 flex flex-col gap-8 py-4 font-archivo-black uppercase text-white md:text-black lg:flex-row lg:text-black"
+            class="mt-32 ml-20 flex flex-col gap-8 py-4 font-archivo-black uppercase text-black md:text-black lg:flex-row lg:text-black"
           >
-            <RouterLink to="/" class="lg:hidden" @click="MenuOpen = !MenuOpen"
+            <RouterLink to="/" class="transition-colors duration-150 hover:text-red-100 lg:hidden" @click="MenuOpen = !MenuOpen"
               >accueil</RouterLink
             >
             <RouterLink to="/Programmation" @click="MenuOpen = !MenuOpen"
@@ -40,6 +57,12 @@
             >
             <RouterLink to="/Contact" @click="MenuOpen = !MenuOpen"
               >contact</RouterLink
+            >
+            <RouterLink to="/compte" @click="MenuOpen = !MenuOpen"
+              >compte</RouterLink
+            >
+            <RouterLink to="/chat" @click="MenuOpen = !MenuOpen"
+              >chat</RouterLink
             >
           </ul>
         </nav>
@@ -83,15 +106,131 @@
 </template>
 
 <script>
-import { MenuIcon } from "@heroicons/vue/outline";
-import { XIcon } from "@heroicons/vue/outline";
-import { ref } from "vue";
-const menuVisible = ref(true);
+import { MenuIcon, XIcon } from "@heroicons/vue/outline";
+
+// Fonctions Firestore
+import {
+  getFirestore,
+  collection,
+  onSnapshot,
+  query,
+  where,
+} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
+// Fonctions Storage
+import {
+  getStorage,
+  ref,
+  getDownloadURL,
+} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js";
+// Fonction authentification
+import { getAuth } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js";
+// Import emetteur de main.js
+import { emitter } from "./main.js";
 export default {
   name: "App",
-  components: { MenuIcon, XIcon },
+  components: {
+    MenuIcon,
+    XIcon,
+  },
   data() {
-    return { MenuOpen: false };
+    return {
+      MenuOpen: false,
+      user: {
+        // User connecté
+        email: null,
+        password: null,
+      },
+      userInfo: null, // Informations complémentaires user connecté
+      name: "Vidéo", // Titre de l'application ou nom du user
+      avatar: null, // Avatar / image du user connecté
+      isAdmin: false, // Si l'utilisateur est ou non administrateur
+    };
+  },
+  mounted() {
+    // Vérifier si un user connecté existe déjà
+    // Au lancement de l'application
+    this.getUserConnect();
+    // Ecoute de l'évènement de connexion
+    emitter.on("connectUser", (e) => {
+      // Récupération du user
+      this.user = e.user;
+      console.log("App => Reception user connecté", this.user);
+      // Recherche infos complémentaires du user
+      this.getUserInfo(this.user);
+    });
+    // Ecoute de l'évènement de deconnexion
+    emitter.on("deConnectUser", (e) => {
+      // Récupération user
+      this.user = e.user;
+      console.log("App => Reception user deconnecté", this.user);
+      // Réinitialisation infos complémentaires user
+      this.userInfo = null;
+      this.name = "Vidéo";
+      this.avatar = null;
+      this.isAdmin = false;
+    });
+  },
+  methods: {
+    // Obtenir les informations du user connecté
+    async getUserConnect() {
+      await getAuth().onAuthStateChanged(
+        function (user) {
+          if (user) {
+            // Récupération du user connecté
+            this.user = user;
+            // Recherche de ses infos complémentaires
+            this.getUserInfo(this.user);
+          }
+        }.bind(this)
+      );
+      // Noter le bind(this), cas des zones isolées
+      // lors de 2 strucutres imbiquées, Vue perd la visibilité
+      // des données
+      // On les ré injecte par le mot-clef this
+    },
+    async getUserInfo(user) {
+      // Rechercher les informations complémentaires de l'utilisateur
+      // Obtenir Firestore
+      const firestore = getFirestore();
+      // Base de données (collection)  document participant
+      const dbUsers = collection(firestore, "users");
+      // Recherche du user par son uid
+      const q = query(dbUsers, where("uid", "==", user.uid));
+      await onSnapshot(q, (snapshot) => {
+        this.userInfo = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        console.log("userInfo", this.userInfo);
+        // userInfo étant un tableau, onn récupère
+        // ses informations dans la 1° cellule du tableau : 0
+        this.name = this.userInfo[0].login;
+        this.isAdmin = this.userInfo[0].admin;
+        // Recherche de l'image du user sur le Storage
+        const storage = getStorage();
+        // Référence du fichier avec son nom
+        const spaceRef = ref(storage, "users/" + this.userInfo[0].avatar);
+        getDownloadURL(spaceRef)
+          .then((url) => {
+            this.avatar = url;
+          })
+          .catch((error) => {
+            console.log("erreur downloadUrl", error);
+          });
+      });
+    },
   },
 };
 </script>
+
+<style>
+/* Import Styles application */
+@import "./assets/style.css";
+
+.avatar {
+  vertical-align: middle;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+</style>

@@ -8,7 +8,7 @@
     <div
       class="grid grid-flow-row-dense grid-cols-3 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10"
     >
-      <bouton class="w-24" texte="TOUS"></bouton>
+      <bouton class="w-24 " texte="TOUS"></bouton>
       <RouterLink to="/ConcertJ1"
         ><bouton class="w-24" texte="JOUR 1"></bouton
       ></RouterLink>
@@ -19,7 +19,7 @@
         ><bouton class="w-32" texte="GRANDE SCÈNE"></bouton
       ></RouterLink>
       <RouterLink to="/ConcertPS"
-        ><bouton class="ml-9 w-32" texte="PETITE SCÈNE"></bouton
+        ><bouton class="w-36" texte="PETITE SCÈNE"></bouton
       ></RouterLink>
     </div>
     <div

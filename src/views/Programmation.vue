@@ -9,7 +9,7 @@
     </div>
 
     <form>
-      <h3 class="m-3 font-bold dark:bg-grey dark:text-white">Nouvel artiste</h3>
+      <h3 class="m-3 font-bold text-black dark:bg-grey dark:text-white">Nouvel artiste</h3>
       <div class="input-group m-3">
         <div class="input-group-prepend">
           <span class="input-group-text"></span>
@@ -31,7 +31,7 @@
         <thead>
           <tr>
             <th scope="col">
-              <div class="float-left ml-3 mt-3">Liste des artistes actuels</div>
+              <div class="float-left text-black ml-3 mt-3">Liste des artistes actuels</div>
               <span>
                 <div class="input-group">
                   <div class="input-group-prepend m-3">
@@ -60,23 +60,23 @@
                   >
                     <div
                       to="/programmation"
-                      v-for="g in filterByNom"
-                      :key="g.id"
+                      v-for="artiste in filterByNom"
+                      :key="artiste.id"
                     >
                       <div>
                         <img
-                          class="center h-48 w-3/4 rounded-t-lg object-cover"
-                          :src="g.image"
+                          class="center h-48 w-full rounded-t-lg object-cover"
+                          :src="artiste.image"
                           alt="imgalt"
                         />
                         <div
                           class="w-3/4 items-center justify-center rounded-t-lg text-center"
                         >
-                          <h3
+                          <input
+                            type="text"
                             class="rounded-b-lg bg-red-100 object-cover font-homenaje text-3xl uppercase text-white"
-                          >
-                            {{ g.nom }}
-                          </h3>
+                            v-model="artiste.nom"
+                          />
                         </div>
                       </div>
 
@@ -119,13 +119,6 @@ import {
   deleteDoc,
   onSnapshot,
 } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
-
-import {
-  getStorage, // Obtenir le Cloud Storage
-  ref, // Pour créer une référence à un fichier à uploader
-  getDownloadURL, // Permet de récupérer l'adress complète d'un fichier du Storage
-  uploadString, // Permet d'uploader sur le Cloud Storage une image en Base64
-} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js";
 
 export default {
   name: "ListeView",
@@ -178,22 +171,8 @@ export default {
           id: doc.id,
           ...doc.data(),
         }));
-
-        this.listeArtisteSynchro.forEach(function (artiste) {
-          const storage = getStorage();
-          const spaceRef = ref(storage, "image/" + artiste.image);
-          getDownloadURL(spaceRef)
-            .then((url) => {
-              artiste.image = url;
-              console.log("artiste", artiste);
-            })
-            .catch((error) => {
-              console.log("erreur downloadUrl", error);
-            });
-        });
       });
     },
-
     async createArtiste() {
       const firestore = getFirestore();
       const dbArtiste = collection(firestore, "artiste");
@@ -222,4 +201,3 @@ export default {
 };
 </script>
 
-<style scoped></style>
