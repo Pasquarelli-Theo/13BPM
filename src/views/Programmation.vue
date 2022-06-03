@@ -51,39 +51,48 @@
           <tr v-for="artiste in filterByNom" :key="artiste.id">
             <td>
               <form>
-                <div class="grid grid-flow-row-dense sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 input-group m-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text"></span>
-                  </div>
-                <div>
-                  <img
-                    :src="artiste.image"
-                    alt="Photo de l'artiste"
-                    class="w-1/2 object-cover h-48 rounded-t-lg"
-                  />
-                  <input
-                    type="text"
-                    class="form-control w-1/2 rounded-b-lg bg-red-100 font-homenaje text-3xl uppercase text-white"
-                    v-model="artiste.nom"
-                    required
-                  />
-
-                  <button
-                    class="btn btn-light"
-                    type="submit"
-                    @click.prevent="updateArtiste(artiste)"
-                    title="Modification"
+                <div class="input-group m-3">
+                  <div
+                    class="mx-auto grid max-w-5xl grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(15rem,auto))] gap-7"
                   >
-                    <i class="fa fa-save fa-lg"></i>
-                  </button>
-                  <button
-                    class="btn btn-light"
-                    type="submit"
-                    @click.prevent="deleteArtiste(artiste)"
-                    title="Suppression"
-                  >
-                    delete
-                  </button>
+                    <RouterLink
+                      to="/programmation"
+                      v-for="g in listeArtisteSynchro"
+                      :key="g.id"
+                    >
+                      <div class="">
+                        <img
+                          class="center h-48 w-72 rounded-t-lg object-cover"
+                          :src="g.image"
+                          alt="imgalt"
+                        />
+                        <div
+                          class=" w-72 items-center justify-center rounded-t-lg text-center"
+                        >
+                          <h3
+                            class=" object-cover rounded-b-lg bg-red-100 font-homenaje text-3xl uppercase text-white"
+                          >
+                            {{ g.nom }}
+                          </h3>
+                        </div>
+                      </div>
+                    </RouterLink>
+                    <button
+                      class="btn btn-light"
+                      type="submit"
+                      @click.prevent="updateArtiste(artiste)"
+                      title="Modification"
+                    >
+                      <i class="fa fa-save fa-lg"></i>
+                    </button>
+                    <button
+                      class="btn btn-light"
+                      type="submit"
+                      @click.prevent="deleteArtiste(artiste)"
+                      title="Suppression"
+                    >
+                      delete
+                    </button>
                   </div>
                 </div>
               </form>
